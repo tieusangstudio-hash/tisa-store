@@ -2424,45 +2424,6 @@
    }
   },
   {
-   "id": "tisa.tisa-vu-soul",
-   "kind": "agent",
-   "name": {
-    "vi": "Linh Hồn TISA Vũ",
-    "en": "The Soul of TISA Vu"
-   },
-   "description": {
-    "vi": "Vũ là cộng sự chăm sóc khách hàng dùng được cho mọi ngành: nhắn tin ngắn gọn như người thật, hài hước nhẹ nhàng mà không lố, giữ đúng mạch chuyện, không bao giờ bịa giá hay khuyến mãi. Bạn điền hồ sơ cửa hàng, thêm sản phẩm, gắn vào Chatbot Zalo hay Telegram là Vũ vào ca trực.",
-    "en": "Vu is a customer-care partner for any kind of business: short, human-sounding replies, gentle humour that never overdoes it, follows the thread of the chat, and never makes up a price or a promotion. Fill in your shop profile, add your products, attach it to a Zalo or Telegram chatbot and Vu starts the shift."
-   },
-   "version": "1.1.0",
-   "author": {
-    "name": "Nguyễn Minh Quý"
-   },
-   "category": "ban-hang",
-   "category_label": {
-    "vi": "Bán hàng",
-    "en": "Sales"
-   },
-   "tier": "data",
-   "verified": true,
-   "updated": "2026-11-02",
-   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
-   "license": "MIT",
-   "provides": {
-    "agents": [
-     "tisa-vu"
-    ]
-   },
-   "download": {
-    "url": "dist/tisa-tisa-vu-soul-1.1.0.zip",
-    "sha256": "bd33125cd84338e17870a1012921fc9f543cf7569399da758eff135b4f1fb1b2",
-    "size": 8283
-   },
-   "replaces": [
-    "tisa.linh-hon-tisa-vu"
-   ]
-  },
-  {
    "id": "tisa.agency-agents",
    "kind": "agent",
    "name": {
