@@ -15226,6 +15226,74 @@
     "sha256": "aee3e689c79ecb8f6a356c6c3c5f0a7eff749f0a6939c91fcd38d717a283dc49",
     "size": 7168
    }
+  },
+  {
+   "id": "tisa.facebook-pages",
+   "kind": "connector",
+   "name": {
+    "vi": "Facebook Trang (đăng bài, bình luận)"
+   },
+   "description": {
+    "vi": "TISA đăng bài lên Fanpage thay bạn: đăng ngay khi bạn nhờ, hoặc đăng tự động theo lịch (ví dụ 8 giờ sáng mỗi ngày, đặt bằng một câu chat). Đăng chữ, ảnh, album, video, sửa bài, đọc và trả lời bình luận. Đăng và sửa bài là việc thật nên chỉ chạy ở mức Toàn quyền. Muốn bot tự trực tin nhắn và bình luận của khách, dùng thẻ Facebook Messenger ở trang Kết nối. Một app Meta dùng chung được cho mọi thẻ Meta."
+   },
+   "version": "1.0.2",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "quang-cao",
+   "category_label": {
+    "vi": "Quảng cáo",
+    "en": "Ads"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-09-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "license": "MIT",
+   "provides": {
+    "connectors": [
+     "connectors/facebook-pages.json"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-facebook-pages-1.0.2.zip",
+    "sha256": "c39feddd6477cc0606eac2dcbcb21beaec971499d05b452d87136b224345af94",
+    "size": 18986
+   }
+  },
+  {
+   "id": "tisa.meta-ads",
+   "kind": "connector",
+   "name": {
+    "vi": "Meta Ads (Facebook & Instagram)"
+   },
+   "description": {
+    "vi": "Số liệu quảng cáo Facebook/Instagram qua MCP chính chủ của Meta (tài khoản ads, hiệu suất chiến dịch, benchmark ngành, catalog sản phẩm). LƯU Ý: đang là beta GIỚI HẠN của Meta - chỉ vài ứng dụng được Meta cấp phép sẵn kết nối được, kết nối tự phục vụ CHƯA khả dụng."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "quang-cao",
+   "category_label": {
+    "vi": "Quảng cáo",
+    "en": "Ads"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-09-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "license": "MIT",
+   "provides": {
+    "connectors": [
+     "connectors/meta-ads.json"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-meta-ads-1.0.0.zip",
+    "sha256": "e9e1b67cf09cc185882ab9f621a1061a7d604a4d495e85cbc744f0693d30ffba",
+    "size": 16928
+   }
   }
  ]
 }
