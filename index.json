@@ -9,6 +9,1199 @@
  "_doc": "Danh mục TISA đọc thẳng. Thêm một mục ở đây là mọi máy đang chạy TISA thấy ngay, không cần bản cập nhật. Cách gửi gói: xem CONTRIBUTING.md. Trường _doc và mọi khoá lạ khác đều bị TISA bỏ qua khi đọc.",
  "packs": [
   {
+   "id": "tisa.pricing",
+   "kind": "tool",
+   "name": {
+    "vi": "Tính giá bán",
+    "en": "Pricing helper"
+   },
+   "description": {
+    "vi": "Từ giá vốn ra giá niêm yết: chọn biên lợi nhuận hoặc markup, cộng VAT, làm tròn lên số đẹp. Trả về biên thực tế sau khi làm tròn.",
+    "en": "Turn cost into a shelf price: margin or markup, VAT, rounded up to a tidy number. Reports the real margin after rounding."
+   },
+   "version": "1.1.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "ban-hang",
+   "category_label": {
+    "vi": "Bán hàng",
+    "en": "Sales"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-11-02",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "download": {
+    "url": "dist/tisa-pricing-1.1.0.zip",
+    "sha256": "7e457958119ec9615d2600b793103d4a2e48594a0607e1beea97e09b133476f8",
+    "size": 5294
+   },
+   "replaces": [
+    "tisa.tinh-gia"
+   ],
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.crm",
+   "kind": "bundle",
+   "name": {
+    "vi": "Quản lý khách hàng (CRM)",
+    "en": "Customer management (CRM)"
+   },
+   "description": {
+    "vi": "Sổ khách hàng đặt lên trang Hội thoại: khách từ Telegram, Zalo Bot, Zalo cá nhân; hồ sơ và lịch sử từng người, gắn tag, ghi chú, khách chờ trả lời, thống kê, xuất Excel. Kèm trợ lý CSKH và quy trình rà soát mỗi ngày. Cần TISA 0.440.0 trở lên.",
+    "en": "A customer book on top of the Conversations page: customers from Telegram, Zalo Bot and personal Zalo; per-person profile and history, tags, notes, unanswered queue, stats, Excel export. Ships a support agent and a daily review workflow. Needs TISA 0.440.0 or newer."
+   },
+   "version": "1.1.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "ban-hang",
+   "category_label": {
+    "vi": "Bán hàng",
+    "en": "Sales"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-11-02",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.crm/assets/crm.png",
+   "download": {
+    "url": "dist/tisa-crm-1.1.0.zip",
+    "sha256": "4add0fe759ef159378624c132efdff37a747813cc26327c74a314760f93b08d1",
+    "size": 14017
+   },
+   "replaces": [
+    "tisa.khach-hang-crm"
+   ],
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.composio",
+   "kind": "connector",
+   "name": {
+    "vi": "Composio"
+   },
+   "description": {
+    "vi": "Cổng đa ứng dụng của Composio: một kết nối mở ra hơn 500 app (Gmail, Notion, Google Sheets, GitHub, Linear, Slack...). TISA tìm tool, nối tài khoản từng app và chạy hành động qua Composio, không cần TISA viết connector riêng cho mỗi app. Dán API key (ck_...) là xong."
+   },
+   "version": "1.0.2",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "kho-ung-dung",
+   "category_label": {
+    "vi": "Kho ứng dụng"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-09-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.composio/assets/composio.png",
+   "provides": {
+    "connectors": [
+     "composio"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-composio-1.0.2.zip",
+    "sha256": "f84defcb78280bfcb27ac7f20645b92d8839a088b4b37487c22a3367337d1acd",
+    "size": 16146
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.pancake-pos",
+   "kind": "connector",
+   "name": {
+    "vi": "Pancake POS"
+   },
+   "description": {
+    "vi": "Đơn hàng, doanh thu, khách hàng, tồn kho, quảng cáo từ Pancake POS. Mỗi cửa hàng 1 API key - thêm nhiều tài khoản cho nhiều shop."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "ban-hang",
+   "category_label": {
+    "vi": "Bán hàng"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-09-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.pancake-pos/assets/pancake-pos.png",
+   "provides": {
+    "connectors": [
+     "pancake-pos"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-pancake-pos-1.0.0.zip",
+    "sha256": "33f96c63d1c701a57d096e8b1a138994a05ed75b0bdeffc4cddc61ea1041e496",
+    "size": 8800
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.pancake-chat",
+   "kind": "connector",
+   "name": {
+    "vi": "Pancake hội thoại"
+   },
+   "description": {
+    "vi": "Hộp thư fanpage trên Pancake (pages.fm): đọc hội thoại, tin nhắn, bình luận, khách hàng, thẻ và thống kê nhân viên; gắn thẻ, phân công, ghi chú khách, trả lời khách bằng chữ hoặc ảnh. Mỗi page một kết nối, dán Page ID và Page Access Token là xong."
+   },
+   "version": "1.1.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "nhan-tin",
+   "category_label": {
+    "vi": "Nhắn tin"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-10-19",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.pancake-chat/assets/pancake-chat.png",
+   "provides": {
+    "connectors": [
+     "pancake-chat"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-pancake-chat-1.1.0.zip",
+    "sha256": "d31d9b1fafa03dffd39b562928ace4837141f78902b57e059b178d1b65ba7200",
+    "size": 8625
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.kiotviet",
+   "kind": "connector",
+   "name": {
+    "vi": "KiotViet"
+   },
+   "description": {
+    "vi": "Hàng hoá, nhóm hàng, khách hàng, hoá đơn, trả hàng và chi nhánh từ KiotViet (bán lẻ và F&B). Dán Client ID, Client Secret và tên gian hàng là xong. Mỗi gian hàng một kết nối."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "ban-hang",
+   "category_label": {
+    "vi": "Bán hàng"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-10-14",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.kiotviet/assets/kiotviet.png",
+   "provides": {
+    "connectors": [
+     "kiotviet"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-kiotviet-1.0.0.zip",
+    "sha256": "86b1fca2e387fb3363858cfa10ef276b4299aaa412fc163d41cc6d3c5ecc787b",
+    "size": 12536
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.sapo",
+   "kind": "connector",
+   "name": {
+    "vi": "Sapo"
+   },
+   "description": {
+    "vi": "Đơn hàng, sản phẩm, khách hàng, tồn kho, khuyến mãi và báo cáo doanh thu từ Sapo (Omni, Web). Tạo một ứng dụng riêng trong Sapo, dán API Key và API Secret là xong."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "ban-hang",
+   "category_label": {
+    "vi": "Bán hàng"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-10-14",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.sapo/assets/sapo.png",
+   "provides": {
+    "connectors": [
+     "sapo"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-sapo-1.0.0.zip",
+    "sha256": "c3ac24388517d8c522bbc3f5af96a9f97f241eb53aefca0111c61a22c09a3d98",
+    "size": 13628
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.haravan",
+   "kind": "connector",
+   "name": {
+    "vi": "Haravan"
+   },
+   "description": {
+    "vi": "Đơn hàng, sản phẩm, khách hàng, tồn kho và báo cáo doanh thu, phân nhóm khách, gợi ý nhập hàng từ Haravan. Tạo một ứng dụng riêng trong Haravan, dán Access Token là xong."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "ban-hang",
+   "category_label": {
+    "vi": "Bán hàng"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-10-14",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.haravan/assets/haravan.png",
+   "provides": {
+    "connectors": [
+     "haravan"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-haravan-1.0.0.zip",
+    "sha256": "41f672f038050517e23d963eadb6bf8096b1c9820029940069f0097565989559",
+    "size": 8243
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.nhanh",
+   "kind": "connector",
+   "name": {
+    "vi": "Nhanh.vn"
+   },
+   "description": {
+    "vi": "Đơn hàng, doanh thu, sản phẩm bán chạy, tồn kho và khách hàng từ Nhanh.vn. Chỉ đọc, không sửa được gì trên cửa hàng. Cần Access Token, App ID và Business ID."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "ban-hang",
+   "category_label": {
+    "vi": "Bán hàng"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-10-14",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.nhanh/assets/nhanh.png",
+   "provides": {
+    "connectors": [
+     "nhanh"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-nhanh-1.0.0.zip",
+    "sha256": "958eaa78dbf2a4e18185ea51a314ff7376469d493c2a12b4d29e73c03c6b80fc",
+    "size": 9427
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.shopify",
+   "kind": "connector",
+   "name": {
+    "vi": "Shopify"
+   },
+   "description": {
+    "vi": "Tra cứu sản phẩm, giá, tồn kho và dựng sẵn giỏ hàng của MỘT cửa hàng Shopify qua MCP chính chủ (chuẩn UCP). Không cần API key, không cần cài app, không cần là chủ shop - chỉ cần địa chỉ cửa hàng."
+   },
+   "version": "1.0.2",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "ban-hang",
+   "category_label": {
+    "vi": "Bán hàng"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-09-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.shopify/assets/shopify.png",
+   "provides": {
+    "connectors": [
+     "shopify"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-shopify-1.0.2.zip",
+    "sha256": "be89ffd0c62b6b8052c23a4691f8dfe73f2a4ade06c3d6f170ed108ec93a2757",
+    "size": 15158
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.webcake-landing",
+   "kind": "connector",
+   "name": {
+    "vi": "Webcake Landing"
+   },
+   "description": {
+    "vi": "Để AI tự thiết kế và sửa landing page Webcake bằng lời nói (tạo trang, sửa section, publish...). Chạy local qua npx, mỗi tài khoản 1 JWT."
+   },
+   "version": "1.0.1",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "marketing",
+   "category_label": {
+    "vi": "Marketing"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-10-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.webcake-landing/assets/webcake.jpg",
+   "provides": {
+    "connectors": [
+     "webcake-landing"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-webcake-landing-1.0.1.zip",
+    "sha256": "a758f8f54cdd71fbb35238bd70966c6c7b536f38d6a48be0a3021140787750a6",
+    "size": 10407
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.webcake-landing-web",
+   "kind": "connector",
+   "name": {
+    "vi": "Webcake Landing (đăng nhập web)"
+   },
+   "description": {
+    "vi": "Cùng bộ công cụ landing Webcake nhưng chạy trên máy chủ sẵn: bấm Kết nối rồi đăng nhập, không dán JWT, không cần Node.js trên máy."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "marketing",
+   "category_label": {
+    "vi": "Marketing"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-09-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.webcake-landing-web/assets/webcake.jpg",
+   "provides": {
+    "connectors": [
+     "webcake-landing-web"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-webcake-landing-web-1.0.0.zip",
+    "sha256": "1a5baaa5ccaaeff0bf481d1cfead7e62a2119831bb16a7571934816192768866",
+    "size": 10389
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.google-sheets",
+   "kind": "connector",
+   "name": {
+    "vi": "Google Sheets"
+   },
+   "description": {
+    "vi": "Đọc/ghi bảng tính Google: đổ báo cáo doanh thu, tồn kho, công nợ ra Sheets tự động. Đấu bằng service account - không cần đăng nhập."
+   },
+   "version": "1.0.1",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "van-phong",
+   "category_label": {
+    "vi": "Văn phòng"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-10-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.google-sheets/assets/google-sheets.png",
+   "provides": {
+    "connectors": [
+     "google-sheets"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-google-sheets-1.0.1.zip",
+    "sha256": "d9222c9ed3c2591619fad69e28b8098885a7bcce8f4e9486de8dd0ee3e3db05e",
+    "size": 7520
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.google-search-console",
+   "kind": "connector",
+   "name": {
+    "vi": "Google Search Console"
+   },
+   "description": {
+    "vi": "Số liệu SEO website: khách tìm từ khoá gì ra trang của bạn, lượt hiển thị, lượt bấm, trang top."
+   },
+   "version": "1.0.3",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "marketing",
+   "category_label": {
+    "vi": "Marketing"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-10-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.google-search-console/assets/google-search-console.png",
+   "provides": {
+    "connectors": [
+     "google-search-console"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-google-search-console-1.0.3.zip",
+    "sha256": "ce5a1e24407510fae078fca33ae751fa2d5c7e5fbb2c1f97b404e7d7f421e3cd",
+    "size": 9920
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.google-workspace",
+   "kind": "connector",
+   "name": {
+    "vi": "Google Workspace (Gmail, Lịch, Drive, Docs)"
+   },
+   "description": {
+    "vi": "Gmail, Calendar, Drive, Docs, Sheets, Slides, Forms, Tasks... trong MỘT kết nối. Tạo OAuth client 1 lần, khoảng 10 phút, có hướng dẫn từng bước. Lần đầu gọi tool Google, trình duyệt TRÊN MÁY CHẠY TISA mở ra để bấm đồng ý, nên máy phải có màn hình."
+   },
+   "version": "1.0.3",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "van-phong",
+   "category_label": {
+    "vi": "Văn phòng"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-10-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.google-workspace/assets/google-workspace.png",
+   "provides": {
+    "connectors": [
+     "google-workspace"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-google-workspace-1.0.3.zip",
+    "sha256": "5d4694ca892d9d099f68452c1edf193fc3ce5d4fe4ffeff3a769d06622180d1d",
+    "size": 13191
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.google-tasks",
+   "kind": "connector",
+   "name": {
+    "vi": "Google Tasks"
+   },
+   "description": {
+    "vi": "Việc cần làm trong Google Tasks: xem danh sách, thêm việc, đặt hạn, đánh dấu xong. Chỉ xin quyền Tasks, không đụng Gmail hay Drive. Đăng nhập Google bằng OAuth client tự tạo (~10 phút, có hướng dẫn)."
+   },
+   "version": "1.0.3",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "van-phong",
+   "category_label": {
+    "vi": "Văn phòng"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-10-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.google-tasks/assets/google-tasks.png",
+   "provides": {
+    "connectors": [
+     "google-tasks"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-google-tasks-1.0.3.zip",
+    "sha256": "65ac4fc76318f24c773dcdc78eb952614fda916e8c3135391b9f0bf28271a892",
+    "size": 14187
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.meta-ads-graph",
+   "kind": "connector",
+   "name": {
+    "vi": "Meta Ads (Facebook & Instagram)"
+   },
+   "description": {
+    "vi": "Xem tài khoản quảng cáo, chiến dịch và hiệu suất Facebook, Instagram bằng app Meta của chính bạn (dán App ID và App Secret). Chỉ đọc: không tạo, không sửa chiến dịch, không tiêu tiền. Một app Meta dùng chung được cho mọi thẻ Meta và kênh Messenger."
+   },
+   "version": "1.0.1",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "quang-cao",
+   "category_label": {
+    "vi": "Quảng cáo"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-11-01",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.meta-ads-graph/assets/meta-ads.webp",
+   "provides": {
+    "connectors": [
+     "meta-ads-graph"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-meta-ads-graph-1.0.1.zip",
+    "sha256": "1a3e3173e07f3d9071e334a903f1f16f6d0e152b3c05104426a6eb37f555191a",
+    "size": 18648
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.facebook-monitor",
+   "kind": "connector",
+   "name": {
+    "vi": "Theo dõi Facebook (Apify)"
+   },
+   "description": {
+    "vi": "Theo dõi Trang và Nhóm CÔNG KHAI trên Facebook để tìm bài viral (nhiều share), qua dịch vụ quét Apify. KHÔNG dùng tài khoản cá nhân của bạn nên không lo khoá; chạy tốt trên VPS 24/7. Trả về bài kèm số share/react/bình luận để lọc bài hot. Cần token Apify (đăng ký free, trả theo lượt quét ~2.6 USD/1000 bài). Nhóm KÍN là bước sau (cần thêm cookie)."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "mang-xa-hoi",
+   "category_label": {
+    "vi": "Mạng xã hội"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-09-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.facebook-monitor/assets/meta-ads.webp",
+   "provides": {
+    "connectors": [
+     "facebook-monitor"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-facebook-monitor-1.0.0.zip",
+    "sha256": "ed2a71f96eccdee90bcac3bf9402efd08eef0b4a8151665709ae8f460fcbaa2e",
+    "size": 16844
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.google-ads",
+   "kind": "connector",
+   "name": {
+    "vi": "Google Ads"
+   },
+   "description": {
+    "vi": "Số liệu Google Ads qua MCP chính chủ của Google (chỉ đọc): chiến dịch, chi phí, chuyển đổi, từ khoá qua truy vấn GAQL. Chạy local; cần developer token + Google Cloud, cài 1 lần hơi kỹ thuật."
+   },
+   "version": "1.0.1",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "quang-cao",
+   "category_label": {
+    "vi": "Quảng cáo"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-10-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.google-ads/assets/google-ads.webp",
+   "provides": {
+    "connectors": [
+     "google-ads"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-google-ads-1.0.1.zip",
+    "sha256": "42c8ec2ef4934f1d271d27094a906a3697ca93c52bf47b76c660c42893b07924",
+    "size": 28345
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.tiktok-ads",
+   "kind": "connector",
+   "name": {
+    "vi": "TikTok Ads"
+   },
+   "description": {
+    "vi": "Số liệu quảng cáo TikTok (chỉ đọc): tài khoản, chiến dịch, nhóm quảng cáo, creative, báo cáo hiệu suất. Server cộng đồng chạy local trên Marketing API chính thức - dán App ID + Secret + Access Token."
+   },
+   "version": "1.0.1",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "quang-cao",
+   "category_label": {
+    "vi": "Quảng cáo"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-10-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.tiktok-ads/assets/tiktok-ads.webp",
+   "provides": {
+    "connectors": [
+     "tiktok-ads"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-tiktok-ads-1.0.1.zip",
+    "sha256": "7db47c8b16680a1a5448ff7d0e114f0a7269585dc70ca0439b8a278629008da8",
+    "size": 8805
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.google-calendar",
+   "kind": "connector",
+   "name": {
+    "vi": "Google Calendar"
+   },
+   "description": {
+    "vi": "Lịch Google qua MCP chính chủ của Google: xem lịch, tìm chỗ trống, tạo/sửa sự kiện, nhắc hẹn. Đăng nhập Google trong dashboard, chạy được cả trên VPS. Cần tạo OAuth client + ghi danh Developer Preview của Google 1 lần (~10 phút)."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "van-phong",
+   "category_label": {
+    "vi": "Văn phòng"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-09-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.google-calendar/assets/google-calendar.png",
+   "provides": {
+    "connectors": [
+     "google-calendar"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-google-calendar-1.0.0.zip",
+    "sha256": "eb7c11854c7840d2121d1a63e9e00c260964a65fd64a7515facbe6d12a82b87b",
+    "size": 12536
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.gmail",
+   "kind": "connector",
+   "name": {
+    "vi": "Gmail"
+   },
+   "description": {
+    "vi": "Gmail qua MCP chính chủ của Google: đọc và tìm thư, soạn NHÁP, gắn nhãn sắp xếp hộp thư. Server chính chủ KHÔNG có tool gửi thẳng - luôn dừng ở bản nháp để bạn tự bấm gửi. Cần tạo OAuth client + ghi danh Developer Preview của Google 1 lần."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "van-phong",
+   "category_label": {
+    "vi": "Văn phòng"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-09-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.gmail/assets/gmail.webp",
+   "provides": {
+    "connectors": [
+     "gmail"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-gmail-1.0.0.zip",
+    "sha256": "a7866a1acaaaf24dbe056827f5993fd53973c62e151de910a9943c43454b3c44",
+    "size": 16670
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.resend",
+   "kind": "connector",
+   "name": {
+    "vi": "Resend"
+   },
+   "description": {
+    "vi": "Gửi và quản lý email qua MCP chính chủ của Resend: email giao dịch, broadcast, mẫu email, danh bạ và phân khúc, tên miền gửi, thống kê và nhật ký. Chạy trên máy chủ của Resend, chỉ cần dán API key. Mặc định Chỉ đọc."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "marketing",
+   "category_label": {
+    "vi": "Marketing"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-11-03",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.resend/assets/resend.png",
+   "provides": {
+    "connectors": [
+     "resend"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-resend-1.0.0.zip",
+    "sha256": "9f62c4dbe5f535d69ae31ccdb607ef7ade84955293bfe6e65aa309c88b000b81",
+    "size": 14437
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.slack",
+   "kind": "connector",
+   "name": {
+    "vi": "Slack"
+   },
+   "description": {
+    "vi": "Tìm kiếm và đọc/gửi tin nhắn Slack, xem kênh và thành viên, quản lý canvas qua MCP chính chủ của Slack. Cần tạo một Slack app trong workspace và được admin duyệt (đây là yêu cầu bắt buộc của Slack)."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "nhan-tin",
+   "category_label": {
+    "vi": "Nhắn tin"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-09-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.slack/assets/slack.webp",
+   "provides": {
+    "connectors": [
+     "slack"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-slack-1.0.0.zip",
+    "sha256": "078dd288d9d0469fe1b5e18ca76316ebd7e72020da561e5cfe86bb96f95e4811",
+    "size": 26095
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.systeme-io",
+   "kind": "connector",
+   "name": {
+    "vi": "Systeme.io"
+   },
+   "description": {
+    "vi": "Quản lý liên hệ, tag, trường tuỳ biến, newsletter và phễu từ Systeme.io qua MCP chính chủ. Dán MCP key là xong (key có hạn tối đa 90 ngày, tối đa 2 key mỗi tài khoản)."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "marketing",
+   "category_label": {
+    "vi": "Marketing"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-09-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.systeme-io/assets/systeme-io.png",
+   "provides": {
+    "connectors": [
+     "systeme-io"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-systeme-io-1.0.0.zip",
+    "sha256": "2629227310872d63fe5b36d2933cfc24ead80c044e05de5a197e8ca1882de0df",
+    "size": 12776
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.lark",
+   "kind": "connector",
+   "name": {
+    "vi": "Lark"
+   },
+   "description": {
+    "vi": "Nhắn tin, tài liệu (Docs), bảng dữ liệu (Base/Bitable), wiki và danh bạ trong Lark qua MCP chính chủ. Chạy local bằng app của bạn (dán App ID + App Secret). Cần tạo một Lark app và cấp quyền tương ứng."
+   },
+   "version": "1.0.1",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "van-phong",
+   "category_label": {
+    "vi": "Văn phòng"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-10-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.lark/assets/lark.png",
+   "provides": {
+    "connectors": [
+     "lark"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-lark-1.0.1.zip",
+    "sha256": "07e4d4464b65877a1b1144a602a997c1e3277ebf81a7501b8c5a7917a70c095a",
+    "size": 51857
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.higgsfield",
+   "kind": "connector",
+   "name": {
+    "vi": "Higgsfield"
+   },
+   "description": {
+    "vi": "Tạo và chỉnh ảnh/video bằng AI của Higgsfield qua MCP chính chủ: sinh ảnh, sinh video, nâng nét (upscale), mở rộng khung hình, xoá nền, cắt nhân vật, điều khiển chuyển động. Đăng nhập Higgsfield 1 chạm - không cần tạo app hay dán key. Lưu ý: mỗi lần tạo/chỉnh tiêu credit Higgsfield của bạn."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "sang-tao",
+   "category_label": {
+    "vi": "Sáng tạo"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-09-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.higgsfield/assets/higgsfield.png",
+   "provides": {
+    "connectors": [
+     "higgsfield"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-higgsfield-1.0.0.zip",
+    "sha256": "ec592f8fed96a5211a437f053b12b8b4fa52846f29b802f3924ace400251a5c2",
+    "size": 91932
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.capcut",
+   "kind": "connector",
+   "name": {
+    "vi": "CapCut"
+   },
+   "description": {
+    "vi": "Tạo ảnh và video bằng AI của CapCut từ mô tả chữ, tìm template CapCut theo ý tưởng, qua MCP chính chủ của CapCut. Đăng nhập CapCut 1 chạm - không cần tạo app hay dán key. Lưu ý: mỗi lần tạo tiêu credit CapCut của bạn, CapCut không phục vụ mạng đặt ở Mỹ, và chưa hỗ trợ tải file từ máy lên để dựng."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "sang-tao",
+   "category_label": {
+    "vi": "Sáng tạo"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-10-04",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.capcut/assets/capcut.png",
+   "provides": {
+    "connectors": [
+     "capcut"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-capcut-1.0.0.zip",
+    "sha256": "e1b35c7ab4939e072075541016d72551499f1fe5b9834a6d7f17ebe574671345",
+    "size": 8943
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.mineflow",
+   "kind": "connector",
+   "name": {
+    "vi": "Mineflow"
+   },
+   "description": {
+    "vi": "Nền tảng dữ liệu khách hàng (CDP) & tự động hóa marketing all-in-one trên Zalo, qua MCP chính chủ của Mineflow. Để AI xem và dựng landing page, mini app, biểu mẫu, bảng dữ liệu khách hàng và workflow tự động hóa trên Zalo. Đăng nhập Mineflow 1 chạm - không cần dán key. Ưu đãi riêng cho người dùng TISA: tặng 3 tháng gói Pro và các gói setup Zalo OA, ZNS, Mini App - xem hướng dẫn."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "marketing",
+   "category_label": {
+    "vi": "Marketing"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-10-04",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.mineflow/assets/mineflow.png",
+   "provides": {
+    "connectors": [
+     "mineflow"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-mineflow-1.0.0.zip",
+    "sha256": "2d0474bce1ca33223c1e6c86ff48bcafa7099f6d85900c6d959998afce53b4c1",
+    "size": 54656
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.x-twitter",
+   "kind": "connector",
+   "name": {
+    "vi": "X (Twitter)"
+   },
+   "description": {
+    "vi": "Tìm kiếm và đọc bài đăng, xem hồ sơ và số liệu công khai trên X (Twitter) qua MCP chính chủ của X. Dán Bearer Token (App-only) từ X Developer Portal - dùng để đọc/tìm; đăng bài cần OAuth người dùng (sẽ bổ sung nếu cần)."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "mang-xa-hoi",
+   "category_label": {
+    "vi": "Mạng xã hội"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-09-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.x-twitter/assets/x.png",
+   "provides": {
+    "connectors": [
+     "x-twitter"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-x-twitter-1.0.0.zip",
+    "sha256": "ad2ca7839aa9dc4dd51899b3e05b68075e9df4a57a663d36bc872c17ec5f7729",
+    "size": 271238
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.zernio",
+   "kind": "connector",
+   "name": {
+    "vi": "Zernio: Đăng bài đa kênh",
+    "en": "Zernio: Multi-channel posting"
+   },
+   "description": {
+    "vi": "Một câu lệnh, đăng khắp mạng xã hội: TISA soạn, lên lịch và đăng cùng lúc lên Facebook, Instagram, TikTok, YouTube, LinkedIn, X, Threads, Pinterest và nhiều kênh khác qua MCP chính chủ của Zernio. Xem số liệu, giờ đăng tốt nhất, trả lời bình luận. Đăng ký miễn phí qua link của TISA, dán API key là xong.",
+    "en": "One command, every network: TISA writes, schedules and publishes to Facebook, Instagram, TikTok, YouTube, LinkedIn, X, Threads, Pinterest and more through Zernio's official MCP. See analytics and best times to post, reply to comments. Sign up free through TISA's link and paste an API key."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "mang-xa-hoi",
+   "category_label": {
+    "vi": "Mạng xã hội"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-10-29",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.zernio/assets/zernio.png",
+   "provides": {
+    "connectors": [
+     "zernio"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-zernio-1.0.0.zip",
+    "sha256": "3eec61d60689cf8b8723b3a48d2f68e8c4f1b21220ce553e196807f5cd3034ed",
+    "size": 11325
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.google-keep",
+   "kind": "connector",
+   "name": {
+    "vi": "Google Keep"
+   },
+   "description": {
+    "vi": "Đọc và sửa ghi chú Google Keep: tìm note, tạo note và danh sách việc, gắn nhãn, ghim, lưu trữ. LƯU Ý: Keep không có API chính chủ nên phải dùng master token có TOÀN QUYỀN tài khoản Google, không phải OAuth giới hạn phạm vi như Gmail hay Lịch. TISA chỉ thao tác được ghi chú, nhưng token thì mở cả tài khoản nếu bị lộ."
+   },
+   "version": "1.0.3",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "van-phong",
+   "category_label": {
+    "vi": "Văn phòng"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-10-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.google-keep/assets/google-keep.png",
+   "provides": {
+    "connectors": [
+     "google-keep"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-google-keep-1.0.3.zip",
+    "sha256": "b75e97ee38ee7efdd8e933ea70b8e6ba9cb76bd9374002c59b4ae9373d45c599",
+    "size": 9380
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.notebooklm",
+   "kind": "connector",
+   "name": {
+    "vi": "Google NotebookLM"
+   },
+   "description": {
+    "vi": "Đọc và thao tác notebook trên Google NotebookLM: liệt kê notebook, đọc nguồn, hỏi đáp ngay trong notebook, thêm nguồn, lưu ghi chú, tạo tóm tắt/audio ở Studio. LƯU Ý: NotebookLM chưa có API chính chủ nên phải mượn PHIÊN ĐĂNG NHẬP trình duyệt (cookie Google), không phải OAuth giới hạn phạm vi như Gmail hay Lịch."
+   },
+   "version": "1.0.3",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "van-phong",
+   "category_label": {
+    "vi": "Văn phòng"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-10-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.notebooklm/assets/notebooklm.png",
+   "provides": {
+    "connectors": [
+     "notebooklm"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-notebooklm-1.0.3.zip",
+    "sha256": "1e447cc22921d1f18cc685e853f77e15225e80332dc4fa830cdc59774bd1ec44",
+    "size": 14309
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.n8n",
+   "kind": "connector",
+   "name": {
+    "vi": "n8n"
+   },
+   "description": {
+    "vi": "Điều khiển n8n của bạn: tìm và đọc workflow, xem lịch sử chạy, tạo và sửa workflow, chạy workflow - qua MCP chính chủ của n8n. Cần địa chỉ n8n của bạn + MCP Access Token."
+   },
+   "version": "1.0.2",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "van-phong",
+   "category_label": {
+    "vi": "Văn phòng"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-09-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.n8n/assets/n8n.png",
+   "provides": {
+    "connectors": [
+     "n8n"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-n8n-1.0.2.zip",
+    "sha256": "72d8944137ce61ba9bcbeaee90bde4ca5acecb73b1c72d2cbbd073d1d22f826f",
+    "size": 10910
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.hostinger",
+   "kind": "connector",
+   "name": {
+    "vi": "Hostinger"
+   },
+   "description": {
+    "vi": "Quản lý hosting Hostinger ngay trong chat: xem tên miền và ngày hết hạn, sửa bản ghi DNS, xem website và WordPress, VPS, hộp thư, hoá đơn và gói đang chạy. MCP chính chủ của Hostinger, dán API token là xong."
+   },
+   "version": "1.0.3",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "website",
+   "category_label": {
+    "vi": "Website"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-10-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.hostinger/assets/hostinger.png",
+   "provides": {
+    "connectors": [
+     "hostinger"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-hostinger-1.0.3.zip",
+    "sha256": "a92d360306977685fa97dcc107991f366e3fad6d2168344921db7a064ae0263f",
+    "size": 11193
+   },
+   "license": "MIT"
+  },
+  {
    "id": "tisa.hermes-creative",
    "kind": "skill",
    "name": {
@@ -1089,6 +2282,254 @@
    "replaces": [
     "tisa.tro-ly-nghien-cuu"
    ]
+  },
+  {
+   "id": "tisa.tts-dropship",
+   "kind": "connector",
+   "name": {
+    "vi": "TTS Dropship (thitruongsi.com)"
+   },
+   "description": {
+    "vi": "Bán dropship trên sàn TTS: tìm hàng theo lợi nhuận, thêm vào giỏ, tách địa chỉ từ tin nhắn khách, tạo khách, báo giá ship, LÊN ĐƠN, theo dõi vận đơn và xem tiền về. Sàn không phát hành API key nên đăng nhập bằng token lấy từ trình duyệt, dán thêm refresh token là tự gia hạn. Sàn đổi tên trường dữ liệu thì gói TỰ soi lược đồ và sửa lại truy vấn, không phải cài lại. Tạo đơn và huỷ đơn luôn phải xác nhận hai bước."
+   },
+   "version": "1.1.1",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "ban-hang",
+   "category_label": {
+    "vi": "Bán hàng"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-09-27",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.tts-dropship/assets/tts-dropship.png",
+   "provides": {
+    "connectors": [
+     "tts-dropship"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-tts-dropship-1.1.1.zip",
+    "sha256": "c009f4fa35eeeec48eaa7b4adf03d47e521ce14073bda9bf40e531f8adb370ee",
+    "size": 64809
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.gate",
+   "kind": "tool",
+   "name": {
+    "vi": "TISA Gate",
+    "en": "TISA Gate"
+   },
+   "description": {
+    "vi": "Cổng cho ChatGPT, Claude và AI khác làm việc cùng TISA. AI đó đọc hội thoại của TISA, tư vấn cho bạn, và khi bạn đồng ý thì nhắn thẳng vào khung chat để TISA làm tiếp. Bạn xem được tiến độ, TISA nhớ lại cho lần sau. Cần TISA 0.440.0 trở lên, mật khẩu quản trị và tên miền https.",
+    "en": "A gate for ChatGPT, Claude and other AIs to work with TISA. The AI reads your TISA chats, advises you, and once you agree posts straight into the chat so TISA carries on. You watch the progress, TISA remembers it next time. Needs TISA 0.440.0 or newer, an admin password and an https domain."
+   },
+   "version": "2.1.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "tro-ly-ai",
+   "category_label": {
+    "vi": "Trợ lý AI",
+    "en": "AI assistants"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-11-02",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.gate/assets/tisa-gate.png",
+   "download": {
+    "url": "dist/tisa-gate-2.1.0.zip",
+    "sha256": "24d6ed1bec1094e228b54c02c1e7b8356d96e70b829b7d35f45ee3a90d0addd4",
+    "size": 28482
+   },
+   "replaces": [
+    "tisa.tisa-trong-chatgpt"
+   ],
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.github",
+   "kind": "connector",
+   "name": {
+    "vi": "GitHub"
+   },
+   "description": {
+    "vi": "Làm việc với code trên GitHub qua MCP chính chủ: đọc và sửa file, tạo nhánh, đẩy commit, mở và trộn Pull Request, issue, review, xem và chạy GitHub Actions, đọc log CI, cảnh báo bảo mật. Bật đủ mọi bộ công cụ, dán Personal Access Token là xong."
+   },
+   "version": "1.0.2",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "lap-trinh",
+   "category_label": {
+    "vi": "Lập trình"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-10-13",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.github/assets/github.png",
+   "provides": {
+    "connectors": [
+     "github"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-github-1.0.2.zip",
+    "sha256": "c45c1bc4a863726a4a5e9a5f17461548930bd84cb41d03f9186397804cd3ab8e",
+    "size": 9511
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.supabase",
+   "kind": "connector",
+   "name": {
+    "vi": "Supabase"
+   },
+   "description": {
+    "vi": "Quản lý Supabase qua MCP chính chủ: xem dự án, bảng, chạy SQL, tạo migration, deploy Edge Function, nhánh cơ sở dữ liệu, storage, đọc log và cảnh báo bảo mật, sinh kiểu TypeScript. Dán Personal Access Token là xong."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "lap-trinh",
+   "category_label": {
+    "vi": "Lập trình"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-10-02",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.supabase/assets/supabase.png",
+   "provides": {
+    "connectors": [
+     "supabase"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-supabase-1.0.0.zip",
+    "sha256": "3a31e99e55072db782e9461e59d7524e75fd40019e392d5a4e52b37259bf6797",
+    "size": 8880
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.cloudflare",
+   "kind": "connector",
+   "name": {
+    "vi": "Cloudflare"
+   },
+   "description": {
+    "vi": "Toàn bộ API Cloudflare ngay trong chat qua MCP chính chủ: DNS, Workers, Pages, KV, R2, D1, tường lửa, SSL, cache, thống kê lưu lượng, Zero Trust. Dán API token là xong, quyền của token quyết định TISA được làm gì."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "lap-trinh",
+   "category_label": {
+    "vi": "Lập trình"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-10-02",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.cloudflare/assets/cloudflare.jpg",
+   "provides": {
+    "connectors": [
+     "cloudflare"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-cloudflare-1.0.0.zip",
+    "sha256": "9720c05240bb56c74d647889675efff5683a8f5da5e63f324276bb57f6043d01",
+    "size": 5262
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.cloudflare-deploy",
+   "kind": "tool",
+   "name": {
+    "vi": "Cloudflare Deploy (Wrangler)"
+   },
+   "description": {
+    "vi": "Deploy Worker và trang web tĩnh lên Cloudflare bằng Wrangler ngay trong chat, bộ não nào cũng dùng được. Dùng lại API token của gói Cloudflare, không phải dán lần hai. Deploy thật chỉ chạy khi kết nối Cloudflare ở mức Toàn quyền. Cần Node.js 20+ trên máy chạy TISA."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "lap-trinh",
+   "category_label": {
+    "vi": "Lập trình"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-10-02",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.cloudflare-deploy/assets/cloudflare-deploy.jpg",
+   "provides": {
+    "plugins": [
+     "cloudflare-deploy"
+    ],
+    "skills": [
+     "deploy-cloudflare"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-cloudflare-deploy-1.0.0.zip",
+    "sha256": "79a01766aa91e760e2ad33de8c760664217e5539310487ed376240c8831b24f4",
+    "size": 13322
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.zalo",
+   "kind": "tool",
+   "name": {
+    "vi": "Zalo mở rộng",
+    "en": "Zalo extras"
+   },
+   "description": {
+    "vi": "Đi kèm kết nối Zalo: gửi ảnh và file, tag đúng người trong nhóm, tạo ghi chú, đọc và sửa ghi chú ghim (giữ nguyên ghim), nhắc hẹn, poll, đọc ảnh người ta gửi trong nhóm (ChatGPT trên gói của bạn tả lại nội dung ảnh cho mọi bộ não), và kết bạn: tìm người theo số điện thoại hay tên bạn bè, xem lời mời chờ duyệt và đã gửi, gửi, nhận, từ chối, rút lại lời mời, và đổi tên khách bằng tên gợi nhớ. Cần TISA 0.73.0 trở lên và đã quét QR Zalo ở trang Kết nối.",
+    "en": "Goes with the Zalo connection: send images and files, tag the right people in a group, create notes, read and edit pinned notes (the pin stays), reminders and polls, read the images people post in a group (ChatGPT on your plan describes them for every brain), and handle friends: find people by phone or by a friend's name, see pending and sent requests, send, accept, reject and withdraw requests, and rename a contact with a nickname. Needs TISA 0.73.0 or newer and Zalo scanned on the Connections page."
+   },
+   "version": "1.5.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "nhan-tin",
+   "category_label": {
+    "vi": "Nhắn tin",
+    "en": "Messaging"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-10-27",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.zalo/assets/zalo.png",
+   "provides": {
+    "plugins": [
+     "zalo-image",
+     "zalo-group",
+     "zalo-read-images",
+     "zalo-friend"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-zalo-1.5.0.zip",
+    "sha256": "65af4354cc76cbcf56f9443562d0444fe378e9b2cf12066047f1f49405c58542",
+    "size": 42583
+   },
+   "license": "MIT"
   },
   {
    "id": "tisa.ecc-marketing",
