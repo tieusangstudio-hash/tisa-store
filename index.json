@@ -1,7 +1,7 @@
 {
  "format": "tisa-pack-index",
  "format_version": 1,
- "updated": "2026-11-02",
+ "updated": "2026-11-05",
  "store": {
   "name": "TISA Store",
   "url": "https://github.com/tieusangstudio-hash/tisa-store"
@@ -2429,6 +2429,40 @@
    "description": {
     "vi": "Toàn bộ API Cloudflare ngay trong chat qua MCP chính chủ: DNS, Workers, Pages, KV, R2, D1, tường lửa, SSL, cache, thống kê lưu lượng, Zero Trust. Dán API token là xong, quyền của token quyết định TISA được làm gì."
    },
+   "version": "1.0.1",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "lap-trinh",
+   "category_label": {
+    "vi": "Lập trình"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-11-05",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.cloudflare/assets/cloudflare.jpg",
+   "provides": {
+    "connectors": [
+     "cloudflare"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-cloudflare-1.0.1.zip",
+    "sha256": "23bff1dc2419a0d28adc4ecc1e4dac2d3f4b31202ae7a57d9fc5728b8ea1af25",
+    "size": 5304
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.cloudflare-oauth",
+   "kind": "connector",
+   "name": {
+    "vi": "Cloudflare (đăng nhập web)"
+   },
+   "description": {
+    "vi": "Cùng MCP chính chủ của Cloudflare nhưng không cần tạo API token: bấm Kết nối, đăng nhập Cloudflare rồi tick quyền muốn cấp ngay trên trang của Cloudflare."
+   },
    "version": "1.0.0",
    "author": {
     "name": "TISA"
@@ -2439,18 +2473,18 @@
    },
    "tier": "data",
    "verified": true,
-   "updated": "2026-10-02",
+   "updated": "2026-11-05",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
-   "icon": "packs/tisa.cloudflare/assets/cloudflare.jpg",
+   "icon": "packs/tisa.cloudflare-oauth/assets/cloudflare.jpg",
    "provides": {
     "connectors": [
-     "cloudflare"
+     "cloudflare-oauth"
     ]
    },
    "download": {
-    "url": "dist/tisa-cloudflare-1.0.0.zip",
-    "sha256": "9720c05240bb56c74d647889675efff5683a8f5da5e63f324276bb57f6043d01",
-    "size": 5262
+    "url": "dist/tisa-cloudflare-oauth-1.0.0.zip",
+    "sha256": "28a4cc0ad150a6de6859a19675e6cf09430f67c9695ba03fb5877f8da7a5483a",
+    "size": 4734
    },
    "license": "MIT"
   },
@@ -2461,9 +2495,9 @@
     "vi": "Cloudflare Deploy (Wrangler)"
    },
    "description": {
-    "vi": "Deploy Worker và trang web tĩnh lên Cloudflare bằng Wrangler ngay trong chat, bộ não nào cũng dùng được. Dùng lại API token của gói Cloudflare, không phải dán lần hai. Deploy thật chỉ chạy khi kết nối Cloudflare ở mức Toàn quyền. Cần Node.js 20+ trên máy chạy TISA."
+    "vi": "Deploy Worker và trang web tĩnh lên Cloudflare bằng Wrangler ngay trong chat, bộ não nào cũng dùng được. Dùng lại API token của kết nối Cloudflare (cách Dán API token), không phải dán lần hai. Deploy thật chỉ chạy khi kết nối Cloudflare ở mức Toàn quyền. Cần Node.js 20+ trên máy chạy TISA."
    },
-   "version": "1.0.0",
+   "version": "1.0.1",
    "author": {
     "name": "TISA"
    },
@@ -2473,7 +2507,7 @@
    },
    "tier": "code",
    "verified": true,
-   "updated": "2026-10-02",
+   "updated": "2026-11-05",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "icon": "packs/tisa.cloudflare-deploy/assets/cloudflare-deploy.jpg",
    "provides": {
@@ -2485,9 +2519,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-cloudflare-deploy-1.0.0.zip",
-    "sha256": "79a01766aa91e760e2ad33de8c760664217e5539310487ed376240c8831b24f4",
-    "size": 13322
+    "url": "dist/tisa-cloudflare-deploy-1.0.1.zip",
+    "sha256": "7242bed9890bbd1bdd3f49f2bd664b3f1c1d087b7e1f248f7d81634f6849adbc",
+    "size": 13398
    },
    "license": "MIT"
   },
@@ -3556,7 +3590,7 @@
     "vi": "Skill của REA (Reverse Engineer Anything), repo AI đang nổi nhất GitHub: phân tích app Electron/JavaScript, tệp chạy, firmware và trang web khi không có mã nguồn, so sánh phiên bản, dịch ngược. Cần cài công cụ rea (npm rea-agents).",
     "en": "The REA (Reverse Engineer Anything) skill, GitHub's top trending AI repo: analyse Electron/JavaScript apps, binaries, firmware and web apps without their source, compare versions, decompile. Needs the rea tool (npm rea-agents)."
    },
-   "version": "1.0.5",
+   "version": "1.0.6",
    "author": {
     "name": "morluto",
     "url": "https://github.com/morluto/rea"
@@ -3568,15 +3602,15 @@
    },
    "tier": "data",
    "verified": true,
-   "updated": "2026-11-02",
+   "updated": "2026-11-05",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "source": "https://github.com/morluto/rea",
    "license": "MIT",
    "upstream": {
     "repo": "morluto/rea",
     "ref": "main",
-    "commit": "93b8b82db70279e40f484114cff9dc1958dc14ee",
-    "synced": "2026-11-02"
+    "commit": "fe677f6cf9853fb12490dfb8ef23ccae3a551049",
+    "synced": "2026-11-05"
    },
    "provides": {
     "skills": [
@@ -3584,9 +3618,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-rea-1.0.5.zip",
-    "sha256": "098108ae25b0e1e4f693e600d2abaf328de3c745092c71a532c7e6c8dd724350",
-    "size": 64708
+    "url": "dist/tisa-rea-1.0.6.zip",
+    "sha256": "27d6a398a08b0d36a3bb6b3c6db1e71bb6df76d2a5e09dd9987b7c34b5399241",
+    "size": 66752
    }
   },
   {
