@@ -1,7 +1,7 @@
 {
  "format": "tisa-pack-index",
  "format_version": 1,
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "store": {
   "name": "TISA Store",
   "url": "https://github.com/tieusangstudio-hash/tisa-store"
@@ -3587,7 +3587,7 @@
     "vi": "Skill của REA (Reverse Engineer Anything), repo AI đang nổi nhất GitHub: phân tích app Electron/JavaScript, tệp chạy, firmware và trang web khi không có mã nguồn, so sánh phiên bản, dịch ngược. Cần cài công cụ rea (npm rea-agents).",
     "en": "The REA (Reverse Engineer Anything) skill, GitHub's top trending AI repo: analyse Electron/JavaScript apps, binaries, firmware and web apps without their source, compare versions, decompile. Needs the rea tool (npm rea-agents)."
    },
-   "version": "1.0.9",
+   "version": "1.0.10",
    "author": {
     "name": "morluto",
     "url": "https://github.com/morluto/rea"
@@ -3599,15 +3599,15 @@
    },
    "tier": "data",
    "verified": true,
-   "updated": "2026-11-08",
+   "updated": "2026-11-09",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "source": "https://github.com/morluto/rea",
    "license": "MIT",
    "upstream": {
     "repo": "morluto/rea",
     "ref": "main",
-    "commit": "72d5e72e6d7b7997c4ecb11972fc405be8ec67d2",
-    "synced": "2026-11-08"
+    "commit": "dda2d4029548f820bf5621b3bc1dd1ce381446a2",
+    "synced": "2026-11-09"
    },
    "provides": {
     "skills": [
@@ -3615,9 +3615,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-rea-1.0.9.zip",
-    "sha256": "61a4a433d580e510935d96e31a48bf649eb2f5cb6eab3e9b7bb259fe881fddbc",
-    "size": 68661
+    "url": "dist/tisa-rea-1.0.10.zip",
+    "sha256": "2ed01a99fe430443757024018222f8951a2689113b69d8a7539ed32a86cf266c",
+    "size": 75914
    }
   },
   {
@@ -3906,7 +3906,7 @@
     "vi": "Trọn bộ agency-agents, hơn 280 agent chuyên gia theo 18 nhóm: lập trình, thiết kế, marketing, quảng cáo, bán hàng, tài chính, bảo mật, làm game, bản đồ GIS, chuyên gia ngành. Mỗi agent có tính cách, quy trình và đầu ra rõ ràng. Muốn cài lẻ từng agent thì tìm ở tab Agent.",
     "en": "The full agency-agents set, 280+ expert agents in 18 divisions: engineering, design, marketing, paid media, sales, finance, security, game development, GIS, industry specialists. Each has a personality, process and clear deliverables. To install one at a time, see the Agents tab."
    },
-   "version": "1.0.1",
+   "version": "1.0.2",
    "author": {
     "name": "msitarzewski",
     "url": "https://github.com/msitarzewski/agency-agents"
@@ -3918,15 +3918,15 @@
    },
    "tier": "data",
    "verified": true,
-   "updated": "2026-11-06",
+   "updated": "2026-11-09",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "source": "https://github.com/msitarzewski/agency-agents",
    "license": "MIT",
    "upstream": {
     "repo": "msitarzewski/agency-agents",
     "ref": "main",
-    "commit": "b859c515d813efcfc4755d3471dd9e7686c7706d",
-    "synced": "2026-11-06"
+    "commit": "8ae6164602c95ca78828b148b9052460ee426885",
+    "synced": "2026-11-09"
    },
    "provides": {
     "agents": [
@@ -4216,9 +4216,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-agency-agents-1.0.1.zip",
-    "sha256": "61b9ad5653e30566f712bfaa195e492497557b8153cfd6098d11c73ceb1bf53d",
-    "size": 1766125
+    "url": "dist/tisa-agency-agents-1.0.2.zip",
+    "sha256": "a71d061450b1c68cf2693eb121022b7ca4248876608e177c22fb12aec45a677f",
+    "size": 1768154
    }
   },
   {
@@ -5597,7 +5597,7 @@
     "vi": "Thiết kế hệ thống mở rộng được, kiến trúc cơ sở dữ liệu, phát triển API và hạ tầng đám mây. Xây ứng dụng máy chủ và microservice vững, an toàn, nhanh.",
     "en": "Senior backend architect specializing in scalable system design, database architecture, API development, and cloud infrastructure. Builds robust, secure, performant server-side applications and microservices"
    },
-   "version": "1.0.0",
+   "version": "1.0.1",
    "author": {
     "name": "msitarzewski",
     "url": "https://github.com/msitarzewski/agency-agents"
@@ -5609,7 +5609,7 @@
    },
    "tier": "data",
    "verified": true,
-   "updated": "2026-10-29",
+   "updated": "2026-11-09",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "source": "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-backend-architect.md",
    "license": "MIT",
@@ -5620,9 +5620,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-agency-engineering-backend-architect-1.0.0.zip",
-    "sha256": "64ba00bb7dc95029aa7dff9ec838525defb2f4c48fab3f3aadd18eadb377b65f",
-    "size": 6802
+    "url": "dist/tisa-agency-engineering-backend-architect-1.0.1.zip",
+    "sha256": "f88f4495f97f25375010fee513b92966d599d445a348d5ce6879f54599245065",
+    "size": 6839
    }
   },
   {
@@ -5792,7 +5792,7 @@
     "vi": "Xây đường ống dữ liệu tin cậy, kiến trúc lakehouse, hạ tầng dữ liệu mở rộng được. Thành thạo ETL/ELT, Spark, dbt, streaming để biến dữ liệu thô thành dữ liệu phân tích được.",
     "en": "Expert data engineer specializing in building reliable data pipelines, lakehouse architectures, and scalable data infrastructure. Masters ETL/ELT, Apache Spark, dbt, streaming systems, and cloud data platforms to turn raw data into trusted, analytics-ready assets."
    },
-   "version": "1.0.0",
+   "version": "1.0.1",
    "author": {
     "name": "msitarzewski",
     "url": "https://github.com/msitarzewski/agency-agents"
@@ -5804,7 +5804,7 @@
    },
    "tier": "data",
    "verified": true,
-   "updated": "2026-10-29",
+   "updated": "2026-11-09",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "source": "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-data-engineer.md",
    "license": "MIT",
@@ -5815,9 +5815,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-agency-engineering-data-engineer-1.0.0.zip",
-    "sha256": "0ff650b52883d395c94ca99ebc6bcd687cac3979a7f31e68a476681584bd7e50",
-    "size": 8901
+    "url": "dist/tisa-agency-engineering-data-engineer-1.0.1.zip",
+    "sha256": "6ea37b061243352e88046e668997b5111f341fbc26128483e67f41b88c1e583c",
+    "size": 9663
    }
   },
   {
@@ -6377,7 +6377,7 @@
     "vi": "Công nghệ web hiện đại, React/Vue/Angular, dựng giao diện và tối ưu hiệu năng.",
     "en": "Expert frontend developer specializing in modern web technologies, React/Vue/Angular frameworks, UI implementation, and performance optimization"
    },
-   "version": "1.0.0",
+   "version": "1.0.1",
    "author": {
     "name": "msitarzewski",
     "url": "https://github.com/msitarzewski/agency-agents"
@@ -6389,7 +6389,7 @@
    },
    "tier": "data",
    "verified": true,
-   "updated": "2026-10-29",
+   "updated": "2026-11-09",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "source": "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-frontend-developer.md",
    "license": "MIT",
@@ -6400,9 +6400,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-agency-engineering-frontend-developer-1.0.0.zip",
-    "sha256": "57a824f8e462ab9356a02f138508db27f9aa42f56f4026362c1749e0842719a0",
-    "size": 5941
+    "url": "dist/tisa-agency-engineering-frontend-developer-1.0.1.zip",
+    "sha256": "0123de134108cd33fdd6b365501f902eb8f343238f04431a64de901b8e3b24bb",
+    "size": 6440
    }
   },
   {
@@ -11837,7 +11837,7 @@
     "vi": "Thiết kế thử nghiệm, theo dõi triển khai và ra quyết định theo dữ liệu. Quản lý A/B test, thử nghiệm tính năng và kiểm chứng giả thuyết bài bản.",
     "en": "Expert project manager specializing in experiment design, execution tracking, and data-driven decision making. Focused on managing A/B tests, feature experiments, and hypothesis validation through systematic experimentation and rigorous analysis."
    },
-   "version": "1.0.0",
+   "version": "1.0.1",
    "author": {
     "name": "msitarzewski",
     "url": "https://github.com/msitarzewski/agency-agents"
@@ -11849,7 +11849,7 @@
    },
    "tier": "data",
    "verified": true,
-   "updated": "2026-10-29",
+   "updated": "2026-11-09",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "source": "https://github.com/msitarzewski/agency-agents/blob/main/project-management/project-management-experiment-tracker.md",
    "license": "MIT",
@@ -11860,9 +11860,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-agency-project-management-experiment-tracker-1.0.0.zip",
-    "sha256": "f2ee6dbef0d761ececac3d23a03aff75717645ed9b5f06a2fc1ec8def6d4d806",
-    "size": 5898
+    "url": "dist/tisa-agency-project-management-experiment-tracker-1.0.1.zip",
+    "sha256": "142abbacf79c634dbb71ae439685bf49c4673b5500c87659d7a810ca2b9e903d",
+    "size": 6017
    }
   },
   {
@@ -14450,7 +14450,7 @@
     "vi": "Kiểm thử API toàn diện, kiểm thử hiệu năng và đảm bảo chất lượng cho mọi hệ thống và tích hợp bên thứ ba.",
     "en": "Expert API testing specialist focused on comprehensive API validation, performance testing, and quality assurance across all systems and third-party integrations"
    },
-   "version": "1.0.0",
+   "version": "1.0.1",
    "author": {
     "name": "msitarzewski",
     "url": "https://github.com/msitarzewski/agency-agents"
@@ -14462,7 +14462,7 @@
    },
    "tier": "data",
    "verified": true,
-   "updated": "2026-10-29",
+   "updated": "2026-11-09",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "source": "https://github.com/msitarzewski/agency-agents/blob/main/testing/testing-api-tester.md",
    "license": "MIT",
@@ -14473,9 +14473,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-agency-testing-api-tester-1.0.0.zip",
-    "sha256": "57deb79a1b5ebd165ac50e400ccd65f95f8c9b3ac7194ec6f96fc3987be1008c",
-    "size": 7049
+    "url": "dist/tisa-agency-testing-api-tester-1.0.1.zip",
+    "sha256": "9c810ca53b8a4e2a4827d5e2ea1889f10fb112ede6b2ebb2a4675c2df34ebfb3",
+    "size": 7481
    }
   },
   {
@@ -14528,7 +14528,7 @@
     "vi": "Đo, phân tích và cải thiện hiệu năng hệ thống trên mọi ứng dụng và hạ tầng.",
     "en": "Expert performance testing and optimization specialist focused on measuring, analyzing, and improving system performance across all applications and infrastructure"
    },
-   "version": "1.0.0",
+   "version": "1.0.1",
    "author": {
     "name": "msitarzewski",
     "url": "https://github.com/msitarzewski/agency-agents"
@@ -14540,7 +14540,7 @@
    },
    "tier": "data",
    "verified": true,
-   "updated": "2026-10-29",
+   "updated": "2026-11-09",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "source": "https://github.com/msitarzewski/agency-agents/blob/main/testing/testing-performance-benchmarker.md",
    "license": "MIT",
@@ -14551,9 +14551,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-agency-testing-performance-benchmarker-1.0.0.zip",
-    "sha256": "ca3d5f6df50c4b58ec632254d3f14c310a15facde2b655aeaa95588a7a660bd9",
-    "size": 7226
+    "url": "dist/tisa-agency-testing-performance-benchmarker-1.0.1.zip",
+    "sha256": "54be9f0a2090a323e793d7c5f5805c74d79e1a0ca1b95a614de5314fd608fcb0",
+    "size": 7408
    }
   },
   {
