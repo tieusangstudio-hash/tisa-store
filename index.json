@@ -1,7 +1,7 @@
 {
  "format": "tisa-pack-index",
  "format_version": 1,
- "updated": "2026-11-05",
+ "updated": "2026-11-08",
  "store": {
   "name": "TISA Store",
   "url": "https://github.com/tieusangstudio-hash/tisa-store"
@@ -2536,7 +2536,7 @@
     "vi": "Đi kèm kết nối Zalo: gửi ảnh và file, tag đúng người trong nhóm, tạo ghi chú, đọc và sửa ghi chú ghim (giữ nguyên ghim), nhắc hẹn, poll, đọc ảnh người ta gửi trong nhóm (ChatGPT trên gói của bạn tả lại nội dung ảnh cho mọi bộ não), và kết bạn: tìm người theo số điện thoại hay tên bạn bè, xem lời mời chờ duyệt và đã gửi, gửi, nhận, từ chối, rút lại lời mời, và đổi tên khách bằng tên gợi nhớ. Cần TISA 0.73.0 trở lên và đã quét QR Zalo ở trang Kết nối.",
     "en": "Goes with the Zalo connection: send images and files, tag the right people in a group, create notes, read and edit pinned notes (the pin stays), reminders and polls, read the images people post in a group (ChatGPT on your plan describes them for every brain), and handle friends: find people by phone or by a friend's name, see pending and sent requests, send, accept, reject and withdraw requests, and rename a contact with a nickname. Needs TISA 0.73.0 or newer and Zalo scanned on the Connections page."
    },
-   "version": "1.5.0",
+   "version": "2.0.1",
    "author": {
     "name": "TISA"
    },
@@ -2547,21 +2547,18 @@
    },
    "tier": "code",
    "verified": true,
-   "updated": "2026-10-27",
+   "updated": "2026-11-09",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "icon": "packs/tisa.zalo/assets/zalo.png",
    "provides": {
     "plugins": [
-     "zalo-image",
-     "zalo-group",
-     "zalo-read-images",
-     "zalo-friend"
+     "zalo-extras"
     ]
    },
    "download": {
-    "url": "dist/tisa-zalo-1.5.0.zip",
-    "sha256": "65af4354cc76cbcf56f9443562d0444fe378e9b2cf12066047f1f49405c58542",
-    "size": 42583
+    "url": "dist/tisa-zalo-2.0.1.zip",
+    "sha256": "35eebfe9d329dd48d2187dd885096a5cdd1d85e018ca8daf422e49271ec175f1",
+    "size": 43429
    },
    "license": "MIT"
   },
@@ -3590,7 +3587,7 @@
     "vi": "Skill của REA (Reverse Engineer Anything), repo AI đang nổi nhất GitHub: phân tích app Electron/JavaScript, tệp chạy, firmware và trang web khi không có mã nguồn, so sánh phiên bản, dịch ngược. Cần cài công cụ rea (npm rea-agents).",
     "en": "The REA (Reverse Engineer Anything) skill, GitHub's top trending AI repo: analyse Electron/JavaScript apps, binaries, firmware and web apps without their source, compare versions, decompile. Needs the rea tool (npm rea-agents)."
    },
-   "version": "1.0.6",
+   "version": "1.0.9",
    "author": {
     "name": "morluto",
     "url": "https://github.com/morluto/rea"
@@ -3602,15 +3599,15 @@
    },
    "tier": "data",
    "verified": true,
-   "updated": "2026-11-05",
+   "updated": "2026-11-08",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "source": "https://github.com/morluto/rea",
    "license": "MIT",
    "upstream": {
     "repo": "morluto/rea",
     "ref": "main",
-    "commit": "fe677f6cf9853fb12490dfb8ef23ccae3a551049",
-    "synced": "2026-11-05"
+    "commit": "72d5e72e6d7b7997c4ecb11972fc405be8ec67d2",
+    "synced": "2026-11-08"
    },
    "provides": {
     "skills": [
@@ -3618,9 +3615,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-rea-1.0.6.zip",
-    "sha256": "27d6a398a08b0d36a3bb6b3c6db1e71bb6df76d2a5e09dd9987b7c34b5399241",
-    "size": 66752
+    "url": "dist/tisa-rea-1.0.9.zip",
+    "sha256": "61a4a433d580e510935d96e31a48bf649eb2f5cb6eab3e9b7bb259fe881fddbc",
+    "size": 68661
    }
   },
   {
@@ -3909,7 +3906,7 @@
     "vi": "Trọn bộ agency-agents, hơn 280 agent chuyên gia theo 18 nhóm: lập trình, thiết kế, marketing, quảng cáo, bán hàng, tài chính, bảo mật, làm game, bản đồ GIS, chuyên gia ngành. Mỗi agent có tính cách, quy trình và đầu ra rõ ràng. Muốn cài lẻ từng agent thì tìm ở tab Agent.",
     "en": "The full agency-agents set, 280+ expert agents in 18 divisions: engineering, design, marketing, paid media, sales, finance, security, game development, GIS, industry specialists. Each has a personality, process and clear deliverables. To install one at a time, see the Agents tab."
    },
-   "version": "1.0.0",
+   "version": "1.0.1",
    "author": {
     "name": "msitarzewski",
     "url": "https://github.com/msitarzewski/agency-agents"
@@ -3921,15 +3918,15 @@
    },
    "tier": "data",
    "verified": true,
-   "updated": "2026-10-29",
+   "updated": "2026-11-06",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "source": "https://github.com/msitarzewski/agency-agents",
    "license": "MIT",
    "upstream": {
     "repo": "msitarzewski/agency-agents",
     "ref": "main",
-    "commit": "b37b5bb33b78f2c1d6567d98e25ca818e3259219",
-    "synced": "2026-10-29"
+    "commit": "b859c515d813efcfc4755d3471dd9e7686c7706d",
+    "synced": "2026-11-06"
    },
    "provides": {
     "agents": [
@@ -4219,9 +4216,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-agency-agents-1.0.0.zip",
-    "sha256": "0707f64f66abe1920dcad4c74f7f9b75e8ecb8c9a55eb716eaf0e2aaed898c20",
-    "size": 1765085
+    "url": "dist/tisa-agency-agents-1.0.1.zip",
+    "sha256": "61b9ad5653e30566f712bfaa195e492497557b8153cfd6098d11c73ceb1bf53d",
+    "size": 1766125
    }
   },
   {
@@ -9305,7 +9302,7 @@
     "vi": "Vận hành đồ thị danh tính dùng chung cho nhiều AI agent, để agent nào hỏi \"thực thể này là ai\" cũng nhận cùng một câu trả lời, kể cả khi ghi đồng thời.",
     "en": "Operates a shared identity graph that multiple AI agents resolve against. Ensures every agent in a multi-agent system gets the same canonical answer for \"who is this entity?\" - deterministically, even under concurrent writes."
    },
-   "version": "1.0.0",
+   "version": "1.0.1",
    "author": {
     "name": "msitarzewski",
     "url": "https://github.com/msitarzewski/agency-agents"
@@ -9317,7 +9314,7 @@
    },
    "tier": "data",
    "verified": true,
-   "updated": "2026-10-29",
+   "updated": "2026-11-06",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "source": "https://github.com/msitarzewski/agency-agents/blob/main/specialized/identity-graph-operator.md",
    "license": "MIT",
@@ -9328,9 +9325,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-agency-identity-graph-operator-1.0.0.zip",
-    "sha256": "ddc313451f80995d1fb9cebd997606f0659ecd2ea8af506f2ea25f5721ad67a2",
-    "size": 8448
+    "url": "dist/tisa-agency-identity-graph-operator-1.0.1.zip",
+    "sha256": "1518372cceaaa9de79a2fece814ea317d2e58eb1384323f0224dcf4979910c7c",
+    "size": 8683
    }
   },
   {
@@ -13244,7 +13241,7 @@
     "vi": "Bảo mật phòng thủ: quét mọi lần nộp code tìm khoá bí mật và dữ liệu nhạy cảm trước tiên, rồi triển khai hoặc soát các lớp kiểm soát bảo mật theo chuẩn của tổ chức.",
     "en": "Defensive application security specialist who scans every code submission for secrets and sensitive data exposure before anything else, then implements or audits security controls following the organization's security standard - covering authentication, authorization, tokens, cookies, HTTP..."
    },
-   "version": "1.0.0",
+   "version": "1.0.1",
    "author": {
     "name": "msitarzewski",
     "url": "https://github.com/msitarzewski/agency-agents"
@@ -13256,7 +13253,7 @@
    },
    "tier": "data",
    "verified": true,
-   "updated": "2026-10-29",
+   "updated": "2026-11-06",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "source": "https://github.com/msitarzewski/agency-agents/blob/main/security/security-senior-secops.md",
    "license": "MIT",
@@ -13267,9 +13264,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-agency-security-senior-secops-1.0.0.zip",
-    "sha256": "b8e6115258702f8755569e2cbf169f664a7afaca359d95419d570f59f1584280",
-    "size": 14652
+    "url": "dist/tisa-agency-security-senior-secops-1.0.1.zip",
+    "sha256": "dd038a7e7de951338be93cf10ca1df9b9aeec85475135b9a5056a91389a6ff47",
+    "size": 14868
    }
   },
   {
@@ -14180,7 +14177,7 @@
     "vi": "Kế hoạch tài chính, quản lý ngân sách, phân tích hiệu quả kinh doanh. Giữ tài chính lành mạnh, tối ưu dòng tiền, đưa góc nhìn tài chính cho tăng trưởng.",
     "en": "Expert financial analyst and controller specializing in financial planning, budget management, and business performance analysis. Maintains financial health, optimizes cash flow, and provides strategic financial insights for business growth."
    },
-   "version": "1.0.0",
+   "version": "1.0.1",
    "author": {
     "name": "msitarzewski",
     "url": "https://github.com/msitarzewski/agency-agents"
@@ -14192,7 +14189,7 @@
    },
    "tier": "data",
    "verified": true,
-   "updated": "2026-10-29",
+   "updated": "2026-11-06",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "source": "https://github.com/msitarzewski/agency-agents/blob/main/support/support-finance-tracker.md",
    "license": "MIT",
@@ -14203,9 +14200,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-agency-support-finance-tracker-1.0.0.zip",
-    "sha256": "c19459f8c39ad8ac106aafe5b6ef5830b9bf89bf8236aa225bc61eeba2e16bf8",
-    "size": 9019
+    "url": "dist/tisa-agency-support-finance-tracker-1.0.1.zip",
+    "sha256": "6bad187524ce725881de93b53fe8e1b5cadfc37fdb2f13f6a167176d735f30e3",
+    "size": 9287
    }
   },
   {
@@ -14726,7 +14723,7 @@
     "vi": "Phân tích, tối ưu và tự động hoá quy trình ở mọi bộ phận để năng suất và hiệu quả cao nhất.",
     "en": "Expert process improvement specialist focused on analyzing, optimizing, and automating workflows across all business functions for maximum productivity and efficiency"
    },
-   "version": "1.0.0",
+   "version": "1.0.1",
    "author": {
     "name": "msitarzewski",
     "url": "https://github.com/msitarzewski/agency-agents"
@@ -14738,7 +14735,7 @@
    },
    "tier": "data",
    "verified": true,
-   "updated": "2026-10-29",
+   "updated": "2026-11-06",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "source": "https://github.com/msitarzewski/agency-agents/blob/main/testing/testing-workflow-optimizer.md",
    "license": "MIT",
@@ -14749,9 +14746,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-agency-testing-workflow-optimizer-1.0.0.zip",
-    "sha256": "1e0dc131336815e6e0177cf9b75d780b0fd0ffc0c595b19393c45021bdc1e562",
-    "size": 8703
+    "url": "dist/tisa-agency-testing-workflow-optimizer-1.0.1.zip",
+    "sha256": "526a5688fc2253606c7a5005c9a61c848ef3eb36f07eb273b2e568c4b9d01cbe",
+    "size": 9025
    }
   },
   {
@@ -15259,6 +15256,73 @@
     "url": "dist/tisa-agency-zk-steward-1.0.0.zip",
     "sha256": "aee3e689c79ecb8f6a356c6c3c5f0a7eff749f0a6939c91fcd38d717a283dc49",
     "size": 7168
+   }
+  },
+  {
+   "id": "tisa.claude-seo",
+   "kind": "skill",
+   "name": {
+    "vi": "Claude SEO: Kiểm tra và tối ưu SEO",
+    "en": "Claude SEO: Audit and optimise SEO"
+   },
+   "description": {
+    "vi": "24 skill SEO của Claude SEO: kiểm tra cả website, phân tích từng trang, SEO kỹ thuật và Core Web Vitals, schema, sitemap, nội dung E-E-A-T, SEO địa phương, thương mại điện tử, backlink, SEO cho AI (GEO). Cần Python 3.11 trở lên.",
+    "en": "24 Claude SEO skills: full site audits, single-page analysis, technical SEO and Core Web Vitals, schema, sitemaps, E-E-A-T content, local SEO, ecommerce, backlinks and AI search (GEO). Needs Python 3.11 or newer."
+   },
+   "version": "1.0.2",
+   "author": {
+    "name": "AgriciDaniel",
+    "url": "https://github.com/AgriciDaniel/claude-seo"
+   },
+   "category": "marketing",
+   "category_label": {
+    "vi": "Marketing",
+    "en": "Marketing"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-11-06",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "source": "https://github.com/AgriciDaniel/claude-seo",
+   "license": "MIT",
+   "upstream": {
+    "repo": "AgriciDaniel/claude-seo",
+    "ref": "main",
+    "commit": "6be93f45064ffbadced572b5d5c95f55fd263af0",
+    "synced": "2026-11-06"
+   },
+   "provides": {
+    "skills": [
+     "seo",
+     "seo-agentic",
+     "seo-audit",
+     "seo-backlinks",
+     "seo-cluster",
+     "seo-competitor-pages",
+     "seo-content",
+     "seo-content-brief",
+     "seo-drift",
+     "seo-ecommerce",
+     "seo-flow",
+     "seo-geo",
+     "seo-google",
+     "seo-hreflang",
+     "seo-images",
+     "seo-local",
+     "seo-maps",
+     "seo-page",
+     "seo-plan",
+     "seo-programmatic",
+     "seo-schema",
+     "seo-sitemap",
+     "seo-sxo",
+     "seo-technical"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-claude-seo-1.0.2.zip",
+    "sha256": "d9413a48dcbd5a4c950d8e308d9ab1095992690bf11209192c9e13c27ce82909",
+    "size": 676398
    }
   },
   {
