@@ -1,7 +1,7 @@
 {
  "format": "tisa-pack-index",
  "format_version": 1,
- "updated": "2026-11-09",
+ "updated": "2026-11-10",
  "store": {
   "name": "TISA Store",
   "url": "https://github.com/tieusangstudio-hash/tisa-store"
@@ -628,9 +628,9 @@
     "vi": "Google Ads"
    },
    "description": {
-    "vi": "Số liệu Google Ads qua MCP chính chủ của Google (chỉ đọc): chiến dịch, chi phí, chuyển đổi, từ khoá qua truy vấn GAQL. Chạy local; cần developer token + Google Cloud, cài 1 lần hơi kỹ thuật."
+    "vi": "Số liệu Google Ads qua MCP chính chủ của Google: chiến dịch, chi phí, chuyển đổi, từ khoá, lịch sử thay đổi qua truy vấn GAQL. Mặc định chỉ đọc. Chạy local; cần Google Cloud project + OAuth client, không cần developer token, cài 1 lần khoảng 10 phút."
    },
-   "version": "1.0.1",
+   "version": "1.0.2",
    "author": {
     "name": "TISA"
    },
@@ -640,7 +640,7 @@
    },
    "tier": "code",
    "verified": true,
-   "updated": "2026-10-05",
+   "updated": "2026-11-10",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "icon": "packs/tisa.google-ads/assets/google-ads.webp",
    "provides": {
@@ -649,9 +649,81 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-google-ads-1.0.1.zip",
-    "sha256": "42c8ec2ef4934f1d271d27094a906a3697ca93c52bf47b76c660c42893b07924",
-    "size": 28345
+    "url": "dist/tisa-google-ads-1.0.2.zip",
+    "sha256": "160bd5e8e9471b3823fb1f82dd549a7670c547d2e0ddbbf6ec8f3c6cb4565383",
+    "size": 28959
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.google-merchant-center",
+   "kind": "connector",
+   "name": {
+    "vi": "Google Merchant Center",
+    "en": "Google Merchant Center"
+   },
+   "description": {
+    "vi": "Gian hàng Google Merchant Center qua MCP chính chủ của Google (bản alpha): sản phẩm, trạng thái duyệt, lỗi tài khoản, nguồn dữ liệu (feed), báo cáo hiệu suất. Mặc định chỉ đọc. Đăng nhập Google trong dashboard, chạy được cả trên VPS, không cài gì trên máy.",
+    "en": "Google Merchant Center through Google's own MCP server (alpha): products, approval status, account issues, data sources (feeds), performance reports. Read-only by default. Sign in with Google in the dashboard, works on a VPS, nothing to install."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "quang-cao",
+   "category_label": {
+    "vi": "Quảng cáo"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-11-10",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.google-merchant-center/assets/google-merchant-center.png",
+   "provides": {
+    "connectors": [
+     "google-merchant-center"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-google-merchant-center-1.0.0.zip",
+    "sha256": "a6c87b9348a78c889f4d8b1f155cea957deeb7d36c8f0acc003c6f518b65ddfa",
+    "size": 14995
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.google-analytics",
+   "kind": "connector",
+   "name": {
+    "vi": "Google Analytics (GA4)",
+    "en": "Google Analytics (GA4)"
+   },
+   "description": {
+    "vi": "Số liệu website qua MCP chính chủ của Google cho GA4 (chỉ đọc): phiên truy cập, nguồn và chiến dịch (UTM), sự kiện, chuyển đổi, báo cáo thời gian thực. Chạy local, đăng nhập Google 1 lần.",
+    "en": "Website numbers through Google's official GA4 MCP (read-only): sessions, sources and campaigns (UTM), events, conversions and realtime reports. Runs locally; one Google sign-in."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "marketing",
+   "category_label": {
+    "vi": "Marketing"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-11-10",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.google-analytics/assets/google-analytics.png",
+   "provides": {
+    "connectors": [
+     "google-analytics"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-google-analytics-1.0.0.zip",
+    "sha256": "d18e51c7875c51545e04c0ffce8fce37f906d4aef0db00c2de7badf9ffccb485",
+    "size": 11323
    },
    "license": "MIT"
   },
