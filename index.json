@@ -1,7 +1,7 @@
 {
  "format": "tisa-pack-index",
  "format_version": 1,
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "store": {
   "name": "TISA Store",
   "url": "https://github.com/tieusangstudio-hash/tisa-store"
@@ -154,7 +154,7 @@
    "description": {
     "vi": "Hộp thư fanpage trên Pancake (pages.fm): đọc hội thoại, tin nhắn, bình luận, khách hàng, thẻ và thống kê nhân viên; gắn thẻ, phân công, ghi chú khách, trả lời khách bằng chữ hoặc ảnh. Mỗi page một kết nối, dán Page ID và Page Access Token là xong."
    },
-   "version": "1.1.0",
+   "version": "1.1.1",
    "author": {
     "name": "TISA"
    },
@@ -164,7 +164,7 @@
    },
    "tier": "code",
    "verified": true,
-   "updated": "2026-10-19",
+   "updated": "2026-11-13",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "icon": "packs/tisa.pancake-chat/assets/pancake-chat.png",
    "provides": {
@@ -173,9 +173,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-pancake-chat-1.1.0.zip",
-    "sha256": "d31d9b1fafa03dffd39b562928ace4837141f78902b57e059b178d1b65ba7200",
-    "size": 8625
+    "url": "dist/tisa-pancake-chat-1.1.1.zip",
+    "sha256": "3adac548b85ef7a16df6a8c20116909df637f26ceee91f9553e8472edf499682",
+    "size": 27343
    },
    "license": "MIT"
   },
@@ -188,7 +188,7 @@
    "description": {
     "vi": "Hàng hoá, nhóm hàng, khách hàng, hoá đơn, trả hàng và chi nhánh từ KiotViet (bán lẻ và F&B). Dán Client ID, Client Secret và tên gian hàng là xong. Mỗi gian hàng một kết nối."
    },
-   "version": "1.0.0",
+   "version": "1.0.1",
    "author": {
     "name": "TISA"
    },
@@ -198,7 +198,7 @@
    },
    "tier": "code",
    "verified": true,
-   "updated": "2026-10-14",
+   "updated": "2026-11-13",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "icon": "packs/tisa.kiotviet/assets/kiotviet.png",
    "provides": {
@@ -207,9 +207,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-kiotviet-1.0.0.zip",
-    "sha256": "86b1fca2e387fb3363858cfa10ef276b4299aaa412fc163d41cc6d3c5ecc787b",
-    "size": 12536
+    "url": "dist/tisa-kiotviet-1.0.1.zip",
+    "sha256": "978853cef54ed38eca16bc5e36076006f1e7591ad357189b0e52f99e6137dea5",
+    "size": 19913
    },
    "license": "MIT"
   },
@@ -222,7 +222,7 @@
    "description": {
     "vi": "Đơn hàng, sản phẩm, khách hàng, tồn kho, khuyến mãi và báo cáo doanh thu từ Sapo (Omni, Web). Tạo một ứng dụng riêng trong Sapo, dán API Key và API Secret là xong."
    },
-   "version": "1.0.0",
+   "version": "1.0.1",
    "author": {
     "name": "TISA"
    },
@@ -232,7 +232,7 @@
    },
    "tier": "code",
    "verified": true,
-   "updated": "2026-10-14",
+   "updated": "2026-11-13",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "icon": "packs/tisa.sapo/assets/sapo.png",
    "provides": {
@@ -241,9 +241,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-sapo-1.0.0.zip",
-    "sha256": "c3ac24388517d8c522bbc3f5af96a9f97f241eb53aefca0111c61a22c09a3d98",
-    "size": 13628
+    "url": "dist/tisa-sapo-1.0.1.zip",
+    "sha256": "ae16b5c3dd323704ff5708c82616f28d9576c880a57c0dfd65584aefdde733ec",
+    "size": 33508
    },
    "license": "MIT"
   },
@@ -256,7 +256,7 @@
    "description": {
     "vi": "Đơn hàng, sản phẩm, khách hàng, tồn kho và báo cáo doanh thu, phân nhóm khách, gợi ý nhập hàng từ Haravan. Tạo một ứng dụng riêng trong Haravan, dán Access Token là xong."
    },
-   "version": "1.0.0",
+   "version": "1.0.1",
    "author": {
     "name": "TISA"
    },
@@ -266,7 +266,7 @@
    },
    "tier": "code",
    "verified": true,
-   "updated": "2026-10-14",
+   "updated": "2026-11-13",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "icon": "packs/tisa.haravan/assets/haravan.png",
    "provides": {
@@ -275,9 +275,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-haravan-1.0.0.zip",
-    "sha256": "41f672f038050517e23d963eadb6bf8096b1c9820029940069f0097565989559",
-    "size": 8243
+    "url": "dist/tisa-haravan-1.0.1.zip",
+    "sha256": "35ed3be166655dec022e7a0ce0d85d6b9fc3dc92f0d66b52c948e459f22b3c6c",
+    "size": 24305
    },
    "license": "MIT"
   },
@@ -290,7 +290,7 @@
    "description": {
     "vi": "Đơn hàng, doanh thu, sản phẩm bán chạy, tồn kho và khách hàng từ Nhanh.vn. Chỉ đọc, không sửa được gì trên cửa hàng. Cần Access Token, App ID và Business ID."
    },
-   "version": "1.0.0",
+   "version": "1.0.1",
    "author": {
     "name": "TISA"
    },
@@ -300,7 +300,7 @@
    },
    "tier": "code",
    "verified": true,
-   "updated": "2026-10-14",
+   "updated": "2026-11-13",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "icon": "packs/tisa.nhanh/assets/nhanh.png",
    "provides": {
@@ -309,9 +309,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-nhanh-1.0.0.zip",
-    "sha256": "958eaa78dbf2a4e18185ea51a314ff7376469d493c2a12b4d29e73c03c6b80fc",
-    "size": 9427
+    "url": "dist/tisa-nhanh-1.0.1.zip",
+    "sha256": "92c97f3ffce890e50fe1653601ffae0a94245e69d96f0a02a66a50a015eabe61",
+    "size": 16396
    },
    "license": "MIT"
   },
@@ -3319,7 +3319,7 @@
     "vi": "44 skill chính chủ Anthropic cho chủ doanh nghiệp nhỏ: tình hình kinh doanh, dòng tiền, đòi công nợ, trả hoá đơn, quảng cáo, nội dung mạng xã hội, tìm khách, tuyển người, tồn kho, chốt sổ tháng và thuế.",
     "en": "44 official Anthropic skills for small business owners: business pulse, cash flow, invoice chasing, paying bills, ads, social content, finding leads, hiring, inventory, month-end close and taxes."
    },
-   "version": "1.0.0",
+   "version": "1.0.1",
    "author": {
     "name": "Anthropic",
     "url": "https://github.com/anthropics/knowledge-work-plugins"
@@ -3331,15 +3331,15 @@
    },
    "tier": "data",
    "verified": true,
-   "updated": "2026-10-28",
+   "updated": "2026-11-13",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "source": "https://github.com/anthropics/knowledge-work-plugins",
    "license": "Apache-2.0",
    "upstream": {
     "repo": "anthropics/knowledge-work-plugins",
     "ref": "main",
-    "commit": "2574e29377c7173d0cecffef29a6ecbd7f8ccb5d",
-    "synced": "2026-10-28"
+    "commit": "02717ef04446b6ef5aa4b8af15bb536d79f42ed0",
+    "synced": "2026-11-13"
    },
    "provides": {
     "skills": [
@@ -3390,9 +3390,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-anthropic-small-business-1.0.0.zip",
-    "sha256": "58b8e1cb5e45088178910d7d181f7e2f92b29821f9ae3721216d6166b47c2bf1",
-    "size": 574463
+    "url": "dist/tisa-anthropic-small-business-1.0.1.zip",
+    "sha256": "5f71773714f58b4e9aa89b95df808be6e001993f4f18fc48b66bb7576e476a9a",
+    "size": 574455
    }
   },
   {
