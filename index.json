@@ -2178,7 +2178,7 @@
     "vi": "Điều khiển trình duyệt thật qua Playwright MCP chính chủ của Microsoft: mở trang, đọc cấu trúc trang, điền form, bấm nút, chụp màn hình, xuất PDF, chạy kiểm thử đầu-cuối. Không cần API key. Mặc định chạy hồ sơ TÁCH BIỆT và ẩn cửa sổ.",
     "en": "Drive a real browser through Microsoft's official Playwright MCP: open pages, read page structure, fill forms, click, screenshot, export PDF, run end-to-end tests. No API key. Defaults to an isolated, headless profile."
    },
-   "version": "1.0.2",
+   "version": "1.0.3",
    "author": {
     "name": "Microsoft",
     "url": "https://github.com/microsoft/playwright-mcp"
@@ -2190,7 +2190,7 @@
    },
    "tier": "code",
    "verified": true,
-   "updated": "2026-09-05",
+   "updated": "2026-11-16",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "icon": "packs/tisa.playwright/assets/playwright.png",
    "source": "https://github.com/microsoft/playwright-mcp",
@@ -2201,9 +2201,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-playwright-1.0.2.zip",
-    "sha256": "d763af7c93f4863c6887efe2d99680fc4fc7e45bd845e6179011c0e1ad6aee4b",
-    "size": 21075
+    "url": "dist/tisa-playwright-1.0.3.zip",
+    "sha256": "55cbb0870dff47b51420168e0a7434cc52e6fd08ce0a93b05c5c8de6b1bcab3a",
+    "size": 21470
    }
   },
   {
