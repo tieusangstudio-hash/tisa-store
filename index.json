@@ -1,7 +1,7 @@
 {
  "format": "tisa-pack-index",
  "format_version": 1,
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "store": {
   "name": "TISA Store",
   "url": "https://github.com/tieusangstudio-hash/tisa-store"
@@ -460,7 +460,7 @@
    "description": {
     "vi": "Số liệu SEO website: khách tìm từ khoá gì ra trang của bạn, lượt hiển thị, lượt bấm, trang top."
    },
-   "version": "1.0.3",
+   "version": "1.0.4",
    "author": {
     "name": "TISA"
    },
@@ -470,7 +470,7 @@
    },
    "tier": "code",
    "verified": true,
-   "updated": "2026-10-05",
+   "updated": "2026-11-16",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "icon": "packs/tisa.google-search-console/assets/google-search-console.png",
    "provides": {
@@ -479,9 +479,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-google-search-console-1.0.3.zip",
-    "sha256": "ce5a1e24407510fae078fca33ae751fa2d5c7e5fbb2c1f97b404e7d7f421e3cd",
-    "size": 9920
+    "url": "dist/tisa-google-search-console-1.0.4.zip",
+    "sha256": "3f2662dd4d4125c5b56dc089febec47be054fe9be78f9192612cd5112a3b531a",
+    "size": 9932
    },
    "license": "MIT"
   },
@@ -528,7 +528,7 @@
    "description": {
     "vi": "Việc cần làm trong Google Tasks: xem danh sách, thêm việc, đặt hạn, đánh dấu xong. Chỉ xin quyền Tasks, không đụng Gmail hay Drive. Đăng nhập Google bằng OAuth client tự tạo (~10 phút, có hướng dẫn)."
    },
-   "version": "1.0.3",
+   "version": "1.0.4",
    "author": {
     "name": "TISA"
    },
@@ -538,7 +538,7 @@
    },
    "tier": "code",
    "verified": true,
-   "updated": "2026-10-05",
+   "updated": "2026-11-16",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "icon": "packs/tisa.google-tasks/assets/google-tasks.png",
    "provides": {
@@ -547,9 +547,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-google-tasks-1.0.3.zip",
-    "sha256": "65ac4fc76318f24c773dcdc78eb952614fda916e8c3135391b9f0bf28271a892",
-    "size": 14187
+    "url": "dist/tisa-google-tasks-1.0.4.zip",
+    "sha256": "8a78b68746a69c5a6d3b1d16422f8b2b9e447b397a26da66b768212f13bb8e0c",
+    "size": 14192
    },
    "license": "MIT"
   },
@@ -734,6 +734,42 @@
    "license": "MIT"
   },
   {
+   "id": "tisa.google-tag-manager",
+   "kind": "connector",
+   "name": {
+    "vi": "Google Tag Manager",
+    "en": "Google Tag Manager"
+   },
+   "description": {
+    "vi": "Xem và sửa Google Tag Manager: thẻ, trình kích hoạt, biến, phiên bản, xuất bản khi bạn cho phép. Chạy trên máy cài TISA, đăng nhập Google 1 lần, dùng lại được key Google đã lưu ở dịch vụ Google khác.",
+    "en": "Read and edit Google Tag Manager: tags, triggers, variables, versions, and publishing when you allow it. Runs on the TISA machine; one Google sign-in, and it can reuse a Google key saved for another Google service."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "marketing",
+   "category_label": {
+    "vi": "Marketing"
+   },
+   "tier": "code",
+   "verified": true,
+   "updated": "2026-11-16",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.google-tag-manager/assets/google-tag-manager.png",
+   "provides": {
+    "connectors": [
+     "google-tag-manager"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-google-tag-manager-1.0.0.zip",
+    "sha256": "02f631edb5da146c59bfe7054f716aac167eb75aa5554235cbad18c60e0071e0",
+    "size": 11052
+   },
+   "license": "MIT"
+  },
+  {
    "id": "tisa.tiktok-ads",
    "kind": "connector",
    "name": {
@@ -812,7 +848,7 @@
    "description": {
     "vi": "Gmail qua MCP chính chủ của Google: đọc và tìm thư, soạn NHÁP, gắn nhãn sắp xếp hộp thư. Server chính chủ KHÔNG có tool gửi thẳng - luôn dừng ở bản nháp để bạn tự bấm gửi. Cần tạo OAuth client + ghi danh Developer Preview của Google 1 lần."
    },
-   "version": "1.0.0",
+   "version": "1.0.1",
    "author": {
     "name": "TISA"
    },
@@ -822,7 +858,7 @@
    },
    "tier": "data",
    "verified": true,
-   "updated": "2026-09-05",
+   "updated": "2026-11-16",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "icon": "packs/tisa.gmail/assets/gmail.webp",
    "provides": {
@@ -831,9 +867,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-gmail-1.0.0.zip",
-    "sha256": "a7866a1acaaaf24dbe056827f5993fd53973c62e151de910a9943c43454b3c44",
-    "size": 16670
+    "url": "dist/tisa-gmail-1.0.1.zip",
+    "sha256": "0d12a7c2494fa2f01967bd7edd659fbf817f20319bf49016c71aed632b8ab70a",
+    "size": 16684
    },
    "license": "MIT"
   },
