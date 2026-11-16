@@ -1,7 +1,7 @@
 {
  "format": "tisa-pack-index",
  "format_version": 1,
- "updated": "2026-11-13",
+ "updated": "2026-11-15",
  "store": {
   "name": "TISA Store",
   "url": "https://github.com/tieusangstudio-hash/tisa-store"
@@ -737,12 +737,14 @@
    "id": "tisa.tiktok-ads",
    "kind": "connector",
    "name": {
-    "vi": "TikTok Ads"
+    "vi": "TikTok Ads",
+    "en": "TikTok Ads"
    },
    "description": {
-    "vi": "Số liệu quảng cáo TikTok (chỉ đọc): tài khoản, chiến dịch, nhóm quảng cáo, creative, báo cáo hiệu suất. Server cộng đồng chạy local trên Marketing API chính thức - dán App ID + Secret + Access Token."
+    "vi": "Quản lý quảng cáo TikTok qua MCP chính chủ của TikTok for Business: xem tài khoản, số dư, chiến dịch, nhóm quảng cáo, quảng cáo, Smart+, GMV Max, báo cáo hiệu suất, đối tượng, catalog và chẩn đoán tài khoản. Đăng nhập TikTok for Business 1 chạm - không cần tạo app hay dán token. Mặc định chỉ đọc; tạo, sửa, bật tắt chiến dịch và đổi ngân sách tiêu tiền thật nên chỉ chạy ở mức Toàn quyền.",
+    "en": "Manage TikTok ads through TikTok for Business's official MCP: accounts, balance, campaigns, ad groups, ads, Smart+, GMV Max, performance reports, audiences, catalogs and account diagnosis. One-tap TikTok for Business sign-in, no app to create and no token to paste. Read-only by default; creating, editing, pausing or resuming campaigns and changing budgets spend real money, so they only run at Full access."
    },
-   "version": "1.0.1",
+   "version": "2.0.0",
    "author": {
     "name": "TISA"
    },
@@ -750,9 +752,9 @@
    "category_label": {
     "vi": "Quảng cáo"
    },
-   "tier": "code",
+   "tier": "data",
    "verified": true,
-   "updated": "2026-10-05",
+   "updated": "2026-11-15",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "icon": "packs/tisa.tiktok-ads/assets/tiktok-ads.webp",
    "provides": {
@@ -761,9 +763,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-tiktok-ads-1.0.1.zip",
-    "sha256": "7db47c8b16680a1a5448ff7d0e114f0a7269585dc70ca0439b8a278629008da8",
-    "size": 8805
+    "url": "dist/tisa-tiktok-ads-2.0.0.zip",
+    "sha256": "8d9ddb2aa85ef3781add67e40b292c8716fef57f1e9ebc57914b6b549054aea4",
+    "size": 11309
    },
    "license": "MIT"
   },
@@ -1040,6 +1042,42 @@
    "license": "MIT"
   },
   {
+   "id": "tisa.topview",
+   "kind": "connector",
+   "name": {
+    "vi": "Topview",
+    "en": "Topview"
+   },
+   "description": {
+    "vi": "Trợ lý marketing AI của Topview qua MCP chính chủ: tra dữ liệu thị trường Amazon, Shopee, TikTok Shop và kho KOL YouTube, rồi tạo ảnh, video, video avatar nói, ảnh người mẫu cầm sản phẩm, giọng đọc và nhạc bằng Seedance, Kling, Veo, Nano Banana, GPT Image. Đăng nhập Topview 1 chạm - không cần tạo app hay dán key. Lưu ý: mỗi lần tạo tiêu credit Topview của bạn, và gói Unlimited của Topview không dùng được với MCP.",
+    "en": "Topview's AI marketing agent through its official MCP: look up market data from Amazon, Shopee, TikTok Shop and a YouTube creator pool, then generate images, videos, talking avatar videos, product model shots, voiceovers and music with Seedance, Kling, Veo, Nano Banana and GPT Image. One-tap Topview sign-in, no app to create and no key to paste. Note: every generation spends your Topview credits, and Topview's Unlimited plan does not work with MCP."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "sang-tao",
+   "category_label": {
+    "vi": "Sáng tạo"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-11-15",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.topview/assets/topview.webp",
+   "provides": {
+    "connectors": [
+     "topview"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-topview-1.0.0.zip",
+    "sha256": "565299c0998f741ba10fc9da2ffa587c175b3476be0a13eeaa86551efb219d0e",
+    "size": 9534
+   },
+   "license": "MIT"
+  },
+  {
    "id": "tisa.mineflow",
    "kind": "connector",
    "name": {
@@ -1070,6 +1108,42 @@
     "url": "dist/tisa-mineflow-1.0.0.zip",
     "sha256": "2d0474bce1ca33223c1e6c86ff48bcafa7099f6d85900c6d959998afce53b4c1",
     "size": 54656
+   },
+   "license": "MIT"
+  },
+  {
+   "id": "tisa.tiktok-social",
+   "kind": "connector",
+   "name": {
+    "vi": "TikTok",
+    "en": "TikTok"
+   },
+   "description": {
+    "vi": "Quản lý kênh TikTok của bạn qua MCP chính chủ của TikTok: xem số liệu tài khoản và từng video, đọc và trả lời bình luận, theo dõi bài nhắc tới thương hiệu, tìm từ khoá, hashtag và nhạc đang thịnh hành để lên ý tưởng nội dung. Đăng nhập TikTok 1 chạm - không cần tạo app hay dán key. Chưa đăng được video hay ảnh qua kết nối này.",
+    "en": "Run your TikTok account through TikTok's official Social MCP: account and per-video analytics, read and reply to comments, track posts that mention your brand, and find trending keywords, hashtags and music for content ideas. One-tap TikTok sign-in, no app to create and no key to paste. Publishing videos or photos is not available through this connection yet."
+   },
+   "version": "1.0.0",
+   "author": {
+    "name": "TISA"
+   },
+   "category": "mang-xa-hoi",
+   "category_label": {
+    "vi": "Mạng xã hội"
+   },
+   "tier": "data",
+   "verified": true,
+   "updated": "2026-11-15",
+   "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
+   "icon": "packs/tisa.tiktok-social/assets/tiktok.webp",
+   "provides": {
+    "connectors": [
+     "tiktok-social"
+    ]
+   },
+   "download": {
+    "url": "dist/tisa-tiktok-social-1.0.0.zip",
+    "sha256": "8c93e41ac1c53db63afd780bc02d60b0b718b6e49598e39ad01e9d597923d0b2",
+    "size": 9867
    },
    "license": "MIT"
   },
@@ -2403,10 +2477,10 @@
     "en": "TISA Gate"
    },
    "description": {
-    "vi": "Cổng cho ChatGPT, Claude và AI khác làm việc cùng TISA. AI đó đọc hội thoại của TISA, tư vấn cho bạn, và khi bạn đồng ý thì nhắn thẳng vào khung chat để TISA làm tiếp. Bạn xem được tiến độ, TISA nhớ lại cho lần sau. Cần TISA 0.440.0 trở lên, mật khẩu quản trị và tên miền https.",
-    "en": "A gate for ChatGPT, Claude and other AIs to work with TISA. The AI reads your TISA chats, advises you, and once you agree posts straight into the chat so TISA carries on. You watch the progress, TISA remembers it next time. Needs TISA 0.440.0 or newer, an admin password and an https domain."
+    "vi": "Cổng cho ChatGPT, Claude, Gemini, Cursor, n8n và công cụ AI khác làm việc cùng TISA. AI đó đọc hội thoại của TISA, tư vấn cho bạn, và khi bạn đồng ý thì nhắn thẳng vào khung chat để TISA làm tiếp, chọn được cả model và effort. Bạn xem được tiến độ, chuông báo khi việc dài xong, TISA nhớ lại cho lần sau. Cần TISA 0.440.0 trở lên, mật khẩu quản trị và tên miền https.",
+    "en": "A gate for ChatGPT, Claude, Gemini, Cursor, n8n and other AI tools to work with TISA. The AI reads your TISA chats, advises you, and once you agree posts straight into the chat so TISA carries on, with the model and effort it picks. You watch the progress, the bell rings when long work is done, TISA remembers it next time. Needs TISA 0.440.0 or newer, an admin password and an https domain."
    },
-   "version": "2.1.0",
+   "version": "2.2.2",
    "author": {
     "name": "TISA"
    },
@@ -2417,13 +2491,13 @@
    },
    "tier": "code",
    "verified": true,
-   "updated": "2026-11-02",
+   "updated": "2026-11-15",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "icon": "packs/tisa.gate/assets/tisa-gate.png",
    "download": {
-    "url": "dist/tisa-gate-2.1.0.zip",
-    "sha256": "24d6ed1bec1094e228b54c02c1e7b8356d96e70b829b7d35f45ee3a90d0addd4",
-    "size": 28482
+    "url": "dist/tisa-gate-2.2.2.zip",
+    "sha256": "728f1b72da73fd4e00b7484afa539c5ca049868c325aff01c2409fd2d9b87435",
+    "size": 40690
    },
    "replaces": [
     "tisa.tisa-trong-chatgpt"
