@@ -2516,7 +2516,7 @@
     "vi": "Cổng cho ChatGPT, Claude, Gemini, Cursor, n8n và công cụ AI khác làm việc cùng TISA. AI đó đọc hội thoại của TISA, tư vấn cho bạn, và khi bạn đồng ý thì nhắn thẳng vào khung chat để TISA làm tiếp, chọn được cả model và effort. Bạn xem được tiến độ, chuông báo khi việc dài xong, TISA nhớ lại cho lần sau. Cần TISA 0.440.0 trở lên, mật khẩu quản trị và tên miền https.",
     "en": "A gate for ChatGPT, Claude, Gemini, Cursor, n8n and other AI tools to work with TISA. The AI reads your TISA chats, advises you, and once you agree posts straight into the chat so TISA carries on, with the model and effort it picks. You watch the progress, the bell rings when long work is done, TISA remembers it next time. Needs TISA 0.440.0 or newer, an admin password and an https domain."
    },
-   "version": "2.2.2",
+   "version": "2.2.3",
    "author": {
     "name": "TISA"
    },
@@ -2527,13 +2527,13 @@
    },
    "tier": "code",
    "verified": true,
-   "updated": "2026-11-15",
+   "updated": "2026-11-20",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "icon": "packs/tisa.gate/assets/tisa-gate.png",
    "download": {
-    "url": "dist/tisa-gate-2.2.2.zip",
-    "sha256": "728f1b72da73fd4e00b7484afa539c5ca049868c325aff01c2409fd2d9b87435",
-    "size": 40690
+    "url": "dist/tisa-gate-2.2.3.zip",
+    "sha256": "3d03ba4d10c141cf6167e259aaf01016b0530b3efe886ba38d68055e2d80d66a",
+    "size": 41386
    },
    "replaces": [
     "tisa.tisa-trong-chatgpt"
@@ -2549,7 +2549,7 @@
    "description": {
     "vi": "Làm việc với code trên GitHub qua MCP chính chủ: đọc và sửa file, tạo nhánh, đẩy commit, mở và trộn Pull Request, issue, review, xem và chạy GitHub Actions, đọc log CI, cảnh báo bảo mật. Bật đủ mọi bộ công cụ, dán Personal Access Token là xong."
    },
-   "version": "1.0.3",
+   "version": "1.0.4",
    "author": {
     "name": "TISA"
    },
@@ -2559,7 +2559,7 @@
    },
    "tier": "data",
    "verified": true,
-   "updated": "2026-11-04",
+   "updated": "2026-11-20",
    "homepage": "https://github.com/tieusangstudio-hash/tisa-store",
    "icon": "packs/tisa.github/assets/github.png",
    "provides": {
@@ -2568,9 +2568,9 @@
     ]
    },
    "download": {
-    "url": "dist/tisa-github-1.0.3.zip",
-    "sha256": "24cec2f273f3a3ab106a3f3bbd0eceab35e38d3fd5ed77babd9926260914fec0",
-    "size": 9536
+    "url": "dist/tisa-github-1.0.4.zip",
+    "sha256": "65bb0ebbd81146bb230338de92e1ef2e9417c228114eae6d9ae95ce006a1ae9f",
+    "size": 9619
    },
    "license": "MIT"
   },
